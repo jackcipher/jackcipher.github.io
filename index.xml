@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jack</title>
+    <link>/</link>
+    <description>Recent content on Jack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 05 Mar 2022 21:20:01 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PaperMod 主题下代码高亮最佳实践</title>
+      <link>/posts/papermod-highlight/</link>
+      <pubDate>Sat, 05 Mar 2022 21:20:01 +0800</pubDate>
+      
+      <guid>/posts/papermod-highlight/</guid>
+      <description>背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内</description>
+    </item>
+    
+    <item>
+      <title>Docker 下 filebeat 日志收集</title>
+      <link>/posts/docker-filebeat/</link>
+      <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
+      
+      <guid>/posts/docker-filebeat/</guid>
+      <description>背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
+    </item>
+    
+    
+  </channel>
+</rss>
