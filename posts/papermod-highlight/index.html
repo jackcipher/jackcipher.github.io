@@ -1,4 +1,4 @@
-<!doctype html><html lang=en dir=auto>
+<!doctype html><html lang=zh dir=auto>
 <head><meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -7,7 +7,7 @@
 <meta name=description content="背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内">
 <meta name=author content="jack">
 <link rel=canonical href=/posts/papermod-highlight/>
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.a62d893d78f8f46afce97e923fbda23bba7621a5868fe107b439f8c9a7c1732b.css integrity="sha256-pi2JPXj49Gr86X6SP72iO7p2IaWGj+EHtDn4yafBcys=" rel="preload stylesheet" as=style>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.dc317018ec269070502d7d803268c358e2c8cdfceab1631ec1093d678e0d09b0.css integrity="sha256-3DFwGOwmkHBQLX2AMmjDWOLIzfzqsWMewQk9Z44NCbA=" rel="preload stylesheet" as=style>
 <link rel=icon href=/static/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
@@ -26,7 +26,7 @@
 <meta name=twitter:title content="PaperMod 主题下代码高亮最佳实践">
 <meta name=twitter:description content="背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"/posts/"},{"@type":"ListItem","position":3,"name":"PaperMod 主题下代码高亮最佳实践","item":"/posts/papermod-highlight/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"PaperMod 主题下代码高亮最佳实践","name":"PaperMod 主题下代码高亮最佳实践","description":"背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内","keywords":["hugo","papermod"],"articleBody":"背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。\nChroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内置了 Chroma 工具。Hugo 关于 Chroma 的文档在 Syntax Highlighting\n禁用 Highlight.js highlight.js 与 Chroma 的样式是冲突的。\n按照 FAQs 提到的方案，我们首先需要通过 params.assets.disableHLJS 禁用 Highlight.js. 具体配置为：\n1 2 3  params:assets:disableHLJS:true  高亮配置 在项目根目录下面找到配置文件 config.yml，增加以下配置:\n1 2 3 4 5 6 7  markup:highlight:codeFences:trueguessSyntax:truelineNos:truenoClasses:falsestyle:monokai  其中，lineNos的含义为是否显示行号，一般建议开启。noClasses这个配置项的含义并不那么清晰，在查阅了资料后得知：生成代码高亮有两种方式，一种是直接在代码块上进行样式内联，第二种就是在代码块上面增加 CSS 类。该配置项的意思是说是否不生成 CSS 类，即直接嵌套 CSS 内联样式。\n显然，使用 CSS 类后，生成的 HTML 会更加简短、美观。所以在这里我就设置为了 false.\n设置 false 意味着，本来他在把样式直接写到 HTML 中，但你关闭了这个功能，那么就需要你自己生成代码高亮的样式。\n生成 CSS 类 1  hugo gen chromastyles --style=\"dracula\"  assets/css/extended/chroma.css   通过 hugo gen 命令可以生成 Chroma 的样式，在 PaperMod Wiki 中也有提到，凡是在 assets/css/extended 下的 css 文件，都会被自动加载。具体描述参考 FAQs\nHugo 支持的代码高亮样式可以[点击这里](Chroma Style Gallery)\n覆盖系统样式 至此，Chroma 的样式其实已经生成好了，按理说应该不会有问题才对。事实上，这里有一个比较坑的地方在于，PaperMod 将代码块的背景颜色写死了。这意味着不管你使用什么样式的高亮代码，生成的代码的背景颜色都会被系统配置所覆盖。\n为了解决这个问题，我们需要 unset 掉 hljs-bg 这个变量。\n在 assets/css/extend/custom.css 中添加以下样式：\n1 2 3 4 5 6  :root { --hljs-bg: unset; } .dark { --hljs-bg: unset; }   这样系统默认的样式就被清理掉，页面上显示的就是通过 hugo gen生成的配色。\n","wordCount":"684","inLanguage":"en","datePublished":"2022-03-05T21:20:01+08:00","dateModified":"2022-03-05T21:20:01+08:00","author":{"@type":"Person","name":"jack"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/papermod-highlight/"},"publisher":{"@type":"Organization","name":"Jack","logo":{"@type":"ImageObject","url":"/static/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"PaperMod 主题下代码高亮最佳实践","name":"PaperMod 主题下代码高亮最佳实践","description":"背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内","keywords":["hugo","papermod"],"articleBody":"背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。\nChroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内置了 Chroma 工具。Hugo 关于 Chroma 的文档在 Syntax Highlighting\n禁用 Highlight.js highlight.js 与 Chroma 的样式是冲突的。\n按照 FAQs 提到的方案，我们首先需要通过 params.assets.disableHLJS 禁用 Highlight.js. 具体配置为：\n1 2 3  params:assets:disableHLJS:true  高亮配置 在项目根目录下面找到配置文件 config.yml，增加以下配置:\n1 2 3 4 5 6 7  markup:highlight:codeFences:trueguessSyntax:truelineNos:truenoClasses:falsestyle:monokai  其中，lineNos的含义为是否显示行号，一般建议开启。noClasses这个配置项的含义并不那么清晰，在查阅了资料后得知：生成代码高亮有两种方式，一种是直接在代码块上进行样式内联，第二种就是在代码块上面增加 CSS 类。该配置项的意思是说是否不生成 CSS 类，即直接嵌套 CSS 内联样式。\n显然，使用 CSS 类后，生成的 HTML 会更加简短、美观。所以在这里我就设置为了 false.\n设置 false 意味着，本来他在把样式直接写到 HTML 中，但你关闭了这个功能，那么就需要你自己生成代码高亮的样式。\n生成 CSS 类 1  hugo gen chromastyles --style=\"dracula\"  assets/css/extended/chroma.css   通过 hugo gen 命令可以生成 Chroma 的样式，在 PaperMod Wiki 中也有提到，凡是在 assets/css/extended 下的 css 文件，都会被自动加载。具体描述参考 FAQs\nHugo 支持的代码高亮样式可以[点击这里](Chroma Style Gallery)\n覆盖系统样式 至此，Chroma 的样式其实已经生成好了，按理说应该不会有问题才对。事实上，这里有一个比较坑的地方在于，PaperMod 将代码块的背景颜色写死了。这意味着不管你使用什么样式的高亮代码，生成的代码的背景颜色都会被系统配置所覆盖。\n为了解决这个问题，我们需要 unset 掉 hljs-bg 这个变量。\n在 assets/css/extend/custom.css 中添加以下样式：\n1 2 3 4 5 6  :root { --hljs-bg: unset; } .dark { --hljs-bg: unset; }   这样系统默认的样式就被清理掉，页面上显示的就是通过 hugo gen生成的配色。\n","wordCount":"684","inLanguage":"zh","datePublished":"2022-03-05T21:20:01+08:00","dateModified":"2022-03-05T21:20:01+08:00","author":{"@type":"Person","name":"jack"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/papermod-highlight/"},"publisher":{"@type":"Organization","name":"Jack","logo":{"@type":"ImageObject","url":"/static/favicon.ico"}}}</script>
 </head><body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
 <header class=header>
@@ -57,7 +57,7 @@ PaperMod 主题下代码高亮最佳实践
 <div class=toc>
 <details open>
 <summary accesskey=c title="(Alt + C)">
-<span class=details>Table of Contents</span>
+<span class=details>目录</span>
 </summary>
 <div class=inner><ul>
 <li>
@@ -118,7 +118,7 @@ PaperMod 主题下代码高亮最佳实践
 <ul class=post-tags>
 <li><a href=/tags/hugo/>hugo</a></li><li><a href=/tags/papermod/>papermod</a></li></ul><nav class=paginav>
 <a class=next href=/posts/docker-filebeat/>
-<span class=title>Next Page »</span>
+<span class=title>下一页 »</span>
 <br>
 <span>Docker 下 filebeat 日志收集</span>
 </a>
@@ -134,5 +134,5 @@ Powered by
 <script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script>
-<script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerText="copy";function s(){e.innerText="copied!",setTimeout(()=>{e.innerText="copy"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script>
+<script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerText="复制";function s(){e.innerText="已复制！",setTimeout(()=>{e.innerText="复制"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script>
 </body></html>
