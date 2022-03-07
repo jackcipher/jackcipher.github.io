@@ -6,44 +6,44 @@
 <title>Docker 下 filebeat 日志收集 | Jack</title><meta name=keywords content="docker,filebeat">
 <meta name=description content="背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了">
 <meta name=author content="jack">
-<link rel=canonical href=/posts/docker-filebeat/>
+<link rel=canonical href=https://jackcipher.github.io/posts/docker-filebeat/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.dc317018ec269070502d7d803268c358e2c8cdfceab1631ec1093d678e0d09b0.css integrity="sha256-3DFwGOwmkHBQLX2AMmjDWOLIzfzqsWMewQk9Z44NCbA=" rel="preload stylesheet" as=style>
-<link rel=icon href=/static/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=apple-touch-icon href=/apple-touch-icon.png>
-<link rel=mask-icon href=/safari-pinned-tab.svg>
+<link rel=icon href=https://jackcipher.github.io/static/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://jackcipher.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://jackcipher.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://jackcipher.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://jackcipher.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:title" content="Docker 下 filebeat 日志收集">
 <meta property="og:description" content="背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了">
 <meta property="og:type" content="article">
-<meta property="og:url" content="/posts/docker-filebeat/"><meta property="article:section" content="posts">
+<meta property="og:url" content="https://jackcipher.github.io/posts/docker-filebeat/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-03-05T19:03:19+08:00">
 <meta property="article:modified_time" content="2022-03-05T19:03:19+08:00"><meta property="og:site_name" content="Jack">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Docker 下 filebeat 日志收集">
 <meta name=twitter:description content="背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"/posts/"},{"@type":"ListItem","position":3,"name":"Docker 下 filebeat 日志收集","item":"/posts/docker-filebeat/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Docker 下 filebeat 日志收集","name":"Docker 下 filebeat 日志收集","description":"背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了","keywords":["docker","filebeat"],"articleBody":"背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3\n考虑到日志收集工作的普遍性，为了保持版本统一减少运维成本，特增加一种基于 Docker 实现的通用 filebeat 日志收集方案。\n目录结构 最佳实践 建议将 docker-compose 文件存放至 /apps/srv/filebeat_xxx 目录中。 如果有其他习惯用法，也可以放至其他地方，总的原则是尽量放到一个父目录，方便管理。\n1 2 3 4 5 6 7 8 9 10 11 12  ├── data (自动生成) │ ├── meta.json │ └── registry ├── docker-compose.yml (必须) ├── filebeat.yml (必须) ├── inputs.d (必须) │ ├── chat_history_20220111.yml (必须, 视业务情况而定) │ ├── chat_history.yml.template (可选) │ └── history (可选) │ ├── chat_history_20211224.yml │ ├── chat_history_20211225.yml └── log (自动生成)   docker-compose 配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  version:'2'services:filebeat7:image:harbor.baijiayun.com/elk/filebeat_7.5.0:latestcontainer_name:\"filebeat-chat\"restart:alwaysuser:rootvolumes:# filebeat 在容器中默认读取 /usr/share/filebeat/filebeat.yml- ./filebeat.yml:/usr/share/filebeat/filebeat.yml# 具体的配置文件夹 类似 Nginx 的 conf.d- ./inputs.d:/usr/share/filebeat/inputs.d# filebeat 默认日志输出目录- ./log:/opt# registry 等核心数据- ./data:/usr/share/filebeat/data# ⭐️ 需要收集的业务日志目录，根据业务情况调整- /mydata:/mydata- /this/is/a/deep/path:/this/is/a/deep/path  最佳实践 在上述 docker-compose 中，前面部分映射的目录可以保持不变，最后需要收集的业务日志根据业务情况调整。请注意，最后需要收集的业务日志, 尽量映射到相同的位置，如 /this/is/a/deep/path 映射到容器时也要保持该目录层级，方便后续问题排查。\n配置文件 cat /apps/srv/filebeat_chat/inputs.d/chat_history_20220111.yml 本案例中的配置文件由模版产生\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  - enabled:truetype:logignore_older:24hfields_under_root:truejson.add_error_key:truejson.keys_under_root:truepaths:- /mydata/chatHistory/20220111/*.txttail_files:falsefields:special_env:\"latest\"logtype:\"chat-message\"processors:- dissect:tokenizer:\"/mydata/chatHistory/%{date}/%{rnum}.txt\"field:\"log.file.path\"target_prefix:\"\"  模版文件(optional) 聊天消息日志文件较多，如果全盘招收，会占用较大的CPU、内存资源。\n聊天消息每天都会更新，根据这个特性，我们使用了模版文件，每天通过定时任务从模版中生成新的配置文件，并将历史的配置文件移出 inputs.d 目录。\n模版文件如下\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  - enabled:truetype:logignore_older:24hfields_under_root:truejson.add_error_key:truejson.keys_under_root:truepaths:- /mydata/chatHistory/{DATE}/*.txttail_files:falsefields:special_env:\"latest\"logtype:\"chat-message\"processors:- dissect:tokenizer:\"/mydata/chatHistory/%{date}/%{rnum}.txt\"field:\"log.file.path\"target_prefix:\"\"  定时任务(optional) cat /apps/scripts/generate_chat_filebeat_config.sh\n1 2 3 4 5 6 7 8 9 10 11 12 13 14  #!/bin/bash  #生成新文件 today=$(date +\"%Y%m%d\") yesterday=$(date -d \"yesterday\" +\"%Y%m%d\") cd /apps/srv/filebeat_chat/inputs.d #看当日的聊天配置文件是否已经存在 #test -f \"user_report_$today.yml\" || cat user_report.yml.template | sed \"s/{DATE}/$today/\"  user_report_$today.yml test -f \"chat_history_$today.yml\" || cat chat_history.yml.template | sed \"s/{DATE}/$today/\"  chat_history_$today.yml #移除昨天的 #test -f user_report_$yesterday.yml \u0026\u0026 mv user_report_$yesterday.yml ./history/ test -f chat_history_$yesterday.yml \u0026\u0026 mv chat_history_$yesterday.yml ./history/   配置定时任务规则\n1  15 0 * * * sh /apps/scripts/generate_chat_filebeat_config.sh \u0026 /tmp/generate_chat_filebeat_config.log   ","wordCount":"770","inLanguage":"zh","datePublished":"2022-03-05T19:03:19+08:00","dateModified":"2022-03-05T19:03:19+08:00","author":{"@type":"Person","name":"jack"},"mainEntityOfPage":{"@type":"WebPage","@id":"/posts/docker-filebeat/"},"publisher":{"@type":"Organization","name":"Jack","logo":{"@type":"ImageObject","url":"/static/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://jackcipher.github.io/posts/"},{"@type":"ListItem","position":3,"name":"Docker 下 filebeat 日志收集","item":"https://jackcipher.github.io/posts/docker-filebeat/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Docker 下 filebeat 日志收集","name":"Docker 下 filebeat 日志收集","description":"背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了","keywords":["docker","filebeat"],"articleBody":"背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3\n考虑到日志收集工作的普遍性，为了保持版本统一减少运维成本，特增加一种基于 Docker 实现的通用 filebeat 日志收集方案。\n目录结构 最佳实践 建议将 docker-compose 文件存放至 /apps/srv/filebeat_xxx 目录中。 如果有其他习惯用法，也可以放至其他地方，总的原则是尽量放到一个父目录，方便管理。\n1 2 3 4 5 6 7 8 9 10 11 12  ├── data (自动生成) │ ├── meta.json │ └── registry ├── docker-compose.yml (必须) ├── filebeat.yml (必须) ├── inputs.d (必须) │ ├── chat_history_20220111.yml (必须, 视业务情况而定) │ ├── chat_history.yml.template (可选) │ └── history (可选) │ ├── chat_history_20211224.yml │ ├── chat_history_20211225.yml └── log (自动生成)   docker-compose 配置 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19  version:'2'services:filebeat7:image:harbor.baijiayun.com/elk/filebeat_7.5.0:latestcontainer_name:\"filebeat-chat\"restart:alwaysuser:rootvolumes:# filebeat 在容器中默认读取 /usr/share/filebeat/filebeat.yml- ./filebeat.yml:/usr/share/filebeat/filebeat.yml# 具体的配置文件夹 类似 Nginx 的 conf.d- ./inputs.d:/usr/share/filebeat/inputs.d# filebeat 默认日志输出目录- ./log:/opt# registry 等核心数据- ./data:/usr/share/filebeat/data# ⭐️ 需要收集的业务日志目录，根据业务情况调整- /mydata:/mydata- /this/is/a/deep/path:/this/is/a/deep/path  最佳实践 在上述 docker-compose 中，前面部分映射的目录可以保持不变，最后需要收集的业务日志根据业务情况调整。请注意，最后需要收集的业务日志, 尽量映射到相同的位置，如 /this/is/a/deep/path 映射到容器时也要保持该目录层级，方便后续问题排查。\n配置文件 cat /apps/srv/filebeat_chat/inputs.d/chat_history_20220111.yml 本案例中的配置文件由模版产生\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  - enabled:truetype:logignore_older:24hfields_under_root:truejson.add_error_key:truejson.keys_under_root:truepaths:- /mydata/chatHistory/20220111/*.txttail_files:falsefields:special_env:\"latest\"logtype:\"chat-message\"processors:- dissect:tokenizer:\"/mydata/chatHistory/%{date}/%{rnum}.txt\"field:\"log.file.path\"target_prefix:\"\"  模版文件(optional) 聊天消息日志文件较多，如果全盘招收，会占用较大的CPU、内存资源。\n聊天消息每天都会更新，根据这个特性，我们使用了模版文件，每天通过定时任务从模版中生成新的配置文件，并将历史的配置文件移出 inputs.d 目录。\n模版文件如下\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17  - enabled:truetype:logignore_older:24hfields_under_root:truejson.add_error_key:truejson.keys_under_root:truepaths:- /mydata/chatHistory/{DATE}/*.txttail_files:falsefields:special_env:\"latest\"logtype:\"chat-message\"processors:- dissect:tokenizer:\"/mydata/chatHistory/%{date}/%{rnum}.txt\"field:\"log.file.path\"target_prefix:\"\"  定时任务(optional) cat /apps/scripts/generate_chat_filebeat_config.sh\n1 2 3 4 5 6 7 8 9 10 11 12 13 14  #!/bin/bash  #生成新文件 today=$(date +\"%Y%m%d\") yesterday=$(date -d \"yesterday\" +\"%Y%m%d\") cd /apps/srv/filebeat_chat/inputs.d #看当日的聊天配置文件是否已经存在 #test -f \"user_report_$today.yml\" || cat user_report.yml.template | sed \"s/{DATE}/$today/\"  user_report_$today.yml test -f \"chat_history_$today.yml\" || cat chat_history.yml.template | sed \"s/{DATE}/$today/\"  chat_history_$today.yml #移除昨天的 #test -f user_report_$yesterday.yml \u0026\u0026 mv user_report_$yesterday.yml ./history/ test -f chat_history_$yesterday.yml \u0026\u0026 mv chat_history_$yesterday.yml ./history/   配置定时任务规则\n1  15 0 * * * sh /apps/scripts/generate_chat_filebeat_config.sh \u0026 /tmp/generate_chat_filebeat_config.log   ","wordCount":"770","inLanguage":"zh","datePublished":"2022-03-05T19:03:19+08:00","dateModified":"2022-03-05T19:03:19+08:00","author":{"@type":"Person","name":"jack"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://jackcipher.github.io/posts/docker-filebeat/"},"publisher":{"@type":"Organization","name":"Jack","logo":{"@type":"ImageObject","url":"https://jackcipher.github.io/static/favicon.ico"}}}</script>
 </head><body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script>
 <header class=header>
 <nav class=nav>
 <div class=logo>
-<a href accesskey=h title="Jack (Alt + H)">Jack</a>
+<a href=https://jackcipher.github.io accesskey=h title="Jack (Alt + H)">Jack</a>
 <span class=logo-switches>
 <button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
 </button>
 </span>
 </div><ul id=menu>
 <li>
-<a href=/archives/ title=Archives>
+<a href=https://jackcipher.github.io/archives/ title=Archives>
 <span>Archives</span>
 </a>
 </li><li>
-<a href=/tags/ title=Tags>
+<a href=https://jackcipher.github.io/tags/ title=Tags>
 <span>Tags</span>
 </a>
 </li></ul></nav></header><main class=main>
@@ -255,14 +255,14 @@ Docker 下 filebeat 日志收集
 <pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=m>15</span> <span class=m>0</span> * * * sh /apps/scripts/generate_chat_filebeat_config.sh <span class=p>&amp;</span>&gt;&gt; /tmp/generate_chat_filebeat_config.log
 </span></span></code></pre></td></tr></table></div></div></div><footer class=post-footer>
 <ul class=post-tags>
-<li><a href=/tags/docker/>docker</a></li><li><a href=/tags/filebeat/>filebeat</a></li></ul><nav class=paginav>
-<a class=prev href=/posts/papermod-highlight/>
+<li><a href=https://jackcipher.github.io/tags/docker/>docker</a></li><li><a href=https://jackcipher.github.io/tags/filebeat/>filebeat</a></li></ul><nav class=paginav>
+<a class=prev href=https://jackcipher.github.io/posts/papermod-highlight/>
 <span class=title>« 上一页</span>
 <br>
 <span>PaperMod 主题下代码高亮最佳实践</span>
 </a>
 </nav></footer></article></main><footer class=footer>
-<span>&copy; 2022 <a href>Jack</a></span>
+<span>&copy; 2022 <a href=https://jackcipher.github.io>Jack</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

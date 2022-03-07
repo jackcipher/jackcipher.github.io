@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>filebeat on Jack</title>
-    <link>/tags/filebeat/</link>
+    <link>https://jackcipher.github.io/tags/filebeat/</link>
     <description>Recent content in filebeat on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Mar 2022 19:03:19 +0800</lastBuildDate><atom:link href="/tags/filebeat/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Mar 2022 19:03:19 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/tags/filebeat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker 下 filebeat 日志收集</title>
-      <link>/posts/docker-filebeat/</link>
+      <link>https://jackcipher.github.io/posts/docker-filebeat/</link>
       <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
       
-      <guid>/posts/docker-filebeat/</guid>
+      <guid>https://jackcipher.github.io/posts/docker-filebeat/</guid>
       <description>背景 在收集服务端聊天消息日志时，用到了 filebeat dissect 语法，而这个语法是 filebeat 6.4 及之后的版本支持。服务端部分机器的 filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
     </item>
     
