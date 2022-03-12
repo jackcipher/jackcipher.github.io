@@ -5,7 +5,16 @@
     <link>https://jackcipher.github.io/posts/</link>
     <description>Recent content in Posts on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 10 Mar 2022 23:01:08 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Mar 2022 16:22:20 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus 增加身份认证</title>
+      <link>https://jackcipher.github.io/posts/prom_with_auth/</link>
+      <pubDate>Sat, 12 Mar 2022 16:22:20 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/prom_with_auth/</guid>
+      <description>Prometheus 除了提供时序数据库和监控系统存在，其本身也对外提供了 Web 服务，用于提供报表展示及表达式计算，以及用于更新配置文件等功能的 API。 处于安全考虑</description>
+    </item>
+    
     <item>
       <title>ServiceAccount 的使用</title>
       <link>https://jackcipher.github.io/posts/service-account/</link>

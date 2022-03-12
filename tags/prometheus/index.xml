@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>prometheus on Jack</title>
+    <link>https://jackcipher.github.io/tags/prometheus/</link>
+    <description>Recent content in prometheus on Jack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 12 Mar 2022 16:22:20 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus 增加身份认证</title>
+      <link>https://jackcipher.github.io/posts/prom_with_auth/</link>
+      <pubDate>Sat, 12 Mar 2022 16:22:20 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/prom_with_auth/</guid>
+      <description>Prometheus 除了提供时序数据库和监控系统存在，其本身也对外提供了 Web 服务，用于提供报表展示及表达式计算，以及用于更新配置文件等功能的 API。 处于安全考虑</description>
+    </item>
+    
+  </channel>
+</rss>
