@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jackcipher.github.io/tags/alertmanager/</loc>
+    <lastmod>2022-03-14T08:42:52+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/alertmanager-duration-args/</loc>
+    <lastmod>2022-03-14T08:42:52+08:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/</loc>
-    <lastmod>2022-03-12T16:22:20+08:00</lastmod>
+    <lastmod>2022-03-14T08:42:52+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/</loc>
-    <lastmod>2022-03-12T16:22:20+08:00</lastmod>
+    <lastmod>2022-03-14T08:42:52+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/prometheus/</loc>
-    <lastmod>2022-03-12T16:22:20+08:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/posts/prom_with_auth/</loc>
-    <lastmod>2022-03-12T16:22:20+08:00</lastmod>
+    <lastmod>2022-03-14T08:42:52+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/</loc>
+    <lastmod>2022-03-14T08:42:52+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/prom_with_auth/</loc>
     <lastmod>2022-03-12T16:22:20+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/kubernetes/</loc>
