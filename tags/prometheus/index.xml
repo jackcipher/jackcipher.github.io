@@ -5,7 +5,16 @@
     <link>https://jackcipher.github.io/tags/prometheus/</link>
     <description>Recent content in Prometheus on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Mar 2022 08:42:52 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Mar 2022 10:12:22 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus 数据保留时间</title>
+      <link>https://jackcipher.github.io/posts/prometheus-retention/</link>
+      <pubDate>Thu, 24 Mar 2022 10:12:22 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/prometheus-retention/</guid>
+      <description>如何控制 Prometheus 保留多少历史记录？ Prometheus 将时间序列及其样本存储在磁盘上。鉴于磁盘空间是一种有限资源，我们希望对 Prometheus 使用的磁盘空间进行一些限制。在以前的版</description>
+    </item>
+    
     <item>
       <title>Alertmanager 中的周期参数</title>
       <link>https://jackcipher.github.io/posts/alertmanager-duration-args/</link>
