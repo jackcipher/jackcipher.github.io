@@ -5,7 +5,16 @@
     <link>https://jackcipher.github.io/</link>
     <description>Recent content on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 24 Mar 2022 10:12:22 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 14:20:10 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>口语常用短语</title>
+      <link>https://jackcipher.github.io/posts/phrase-in-common/</link>
+      <pubDate>Sat, 16 Jul 2022 14:20:10 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/phrase-in-common/</guid>
+      <description>you&amp;rsquo;re they&amp;rsquo;re there&amp;rsquo;re what&amp;rsquo;re you gonna wanna that&amp;rsquo;ll that it&amp;rsquo;ll shoulda,coulda,woulda you&amp;rsquo;ve got</description>
+    </item>
+    
     <item>
       <title>Prometheus 数据保留时间</title>
       <link>https://jackcipher.github.io/posts/prometheus-retention/</link>
