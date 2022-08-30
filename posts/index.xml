@@ -5,7 +5,16 @@
     <link>https://jackcipher.github.io/posts/</link>
     <description>Recent content in Posts on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 24 Mar 2022 10:12:22 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 20:24:24 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tcpdump in Action</title>
+      <link>https://jackcipher.github.io/posts/tcpdump-in-action/</link>
+      <pubDate>Tue, 30 Aug 2022 20:24:24 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/tcpdump-in-action/</guid>
+      <description>Redis 抓包 1 sudo tcpdump -i eth0 tcp and port 6379 -n -nn -s0 -tttt -w redis.cap</description>
+    </item>
+    
     <item>
       <title>Prometheus 数据保留时间</title>
       <link>https://jackcipher.github.io/posts/prometheus-retention/</link>

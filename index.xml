@@ -5,7 +5,16 @@
     <link>https://jackcipher.github.io/</link>
     <description>Recent content on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Aug 2022 19:11:38 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Aug 2022 20:24:24 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tcpdump in Action</title>
+      <link>https://jackcipher.github.io/posts/tcpdump-in-action/</link>
+      <pubDate>Tue, 30 Aug 2022 20:24:24 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/tcpdump-in-action/</guid>
+      <description>Redis 抓包 1 sudo tcpdump -i eth0 tcp and port 6379 -n -nn -s0 -tttt -w redis.cap</description>
+    </item>
+    
     <item>
       <title>Contraction</title>
       <link>https://jackcipher.github.io/oral/contraction/</link>
