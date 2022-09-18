@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jackcipher.github.io/</loc>
-    <lastmod>2022-08-30T20:24:24+08:00</lastmod>
+    <lastmod>2022-09-17T17:13:47+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/</loc>
-    <lastmod>2022-08-30T20:24:24+08:00</lastmod>
+    <lastmod>2022-09-17T17:13:47+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/prom_relabel/</loc>
+    <lastmod>2022-09-17T17:13:47+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/tcpdump-in-action/</loc>
     <lastmod>2022-08-30T20:24:24+08:00</lastmod>

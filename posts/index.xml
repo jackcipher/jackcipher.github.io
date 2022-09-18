@@ -5,7 +5,16 @@
     <link>https://jackcipher.github.io/posts/</link>
     <description>Recent content in Posts on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Aug 2022 20:24:24 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 17:13:47 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus Relabel 总结</title>
+      <link>https://jackcipher.github.io/posts/prom_relabel/</link>
+      <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
+      <description>在 Prometheus 中采集数据时，relabel 是一个非常实用的工具。然而，官方文档中关于 relabel 的介绍并不多，也几乎举例来说明如何使用。 这里将 relabel 可能用到的地方做</description>
+    </item>
+    
     <item>
       <title>Tcpdump in Action</title>
       <link>https://jackcipher.github.io/posts/tcpdump-in-action/</link>
