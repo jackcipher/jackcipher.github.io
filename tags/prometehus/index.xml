@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prometehus on Jack</title>
+    <link>https://jackcipher.github.io/tags/prometehus/</link>
+    <description>Recent content in Prometehus on Jack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 17 Sep 2022 17:13:47 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/tags/prometehus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prometheus Relabel 总结</title>
+      <link>https://jackcipher.github.io/posts/prom_relabel/</link>
+      <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
+      
+      <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
+      <description>Prometheus 的配置中有一个非常不起眼却很实用的配置，它就是 relabel 配置。官方文档中，关于 relabel 的介绍并不多，主要以配置项的格式，取值做了一个描述。本文将结合实际</description>
+    </item>
+    
+  </channel>
+</rss>

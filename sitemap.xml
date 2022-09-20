@@ -11,7 +11,13 @@
     <loc>https://jackcipher.github.io/posts/build-multiarch-go/</loc>
     <lastmod>2022-09-20T13:50:58+08:00</lastmod>
   </url><url>
+    <loc>https://jackcipher.github.io/tags/prometehus/</loc>
+    <lastmod>2022-09-17T17:13:47+08:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/posts/prom_relabel/</loc>
+    <lastmod>2022-09-17T17:13:47+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/</loc>
     <lastmod>2022-09-17T17:13:47+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/tcpdump-in-action/</loc>
@@ -33,9 +39,6 @@
     <lastmod>2022-03-24T10:12:22+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/prometheus-retention/</loc>
-    <lastmod>2022-03-24T10:12:22+08:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/tags/</loc>
     <lastmod>2022-03-24T10:12:22+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/alertmanager/</loc>

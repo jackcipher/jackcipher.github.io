@@ -21,7 +21,7 @@
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
       
       <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
-      <description>在 Prometheus 中采集数据时，relabel 是一个非常实用的工具。然而，官方文档中关于 relabel 的介绍并不多。 这里将 relabel 可能用到的地方做一个总结。 添加新标签 想给采</description>
+      <description>Prometheus 的配置中有一个非常不起眼却很实用的配置，它就是 relabel 配置。官方文档中，关于 relabel 的介绍并不多，主要以配置项的格式，取值做了一个描述。本文将结合实际</description>
     </item>
     
     <item>
