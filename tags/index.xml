@@ -1,83 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jack</title>
     <link>https://jackcipher.github.io/tags/</link>
     <description>Recent content in Tags on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 17 Sep 2022 17:13:47 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 17:13:47 +0800</lastBuildDate>
+    <atom:link href="https://jackcipher.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prometehus</title>
       <link>https://jackcipher.github.io/tags/prometehus/</link>
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/prometehus/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Prometheus</title>
       <link>https://jackcipher.github.io/tags/prometheus/</link>
       <pubDate>Thu, 24 Mar 2022 10:12:22 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/prometheus/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Alertmanager</title>
       <link>https://jackcipher.github.io/tags/alertmanager/</link>
       <pubDate>Mon, 14 Mar 2022 08:42:52 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/alertmanager/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Kubernetes</title>
       <link>https://jackcipher.github.io/tags/kubernetes/</link>
       <pubDate>Thu, 10 Mar 2022 23:01:08 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hugo</title>
       <link>https://jackcipher.github.io/tags/hugo/</link>
       <pubDate>Sat, 05 Mar 2022 21:20:01 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/hugo/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PaperMod</title>
       <link>https://jackcipher.github.io/tags/papermod/</link>
       <pubDate>Sat, 05 Mar 2022 21:20:01 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/papermod/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Docker</title>
       <link>https://jackcipher.github.io/tags/docker/</link>
       <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/docker/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Filebeat</title>
       <link>https://jackcipher.github.io/tags/filebeat/</link>
       <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/tags/filebeat/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

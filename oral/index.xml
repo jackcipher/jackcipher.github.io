@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Orals on Jack</title>
     <link>https://jackcipher.github.io/oral/</link>
     <description>Recent content in Orals on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 20 Aug 2022 19:11:38 +0800</lastBuildDate><atom:link href="https://jackcipher.github.io/oral/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 19:11:38 +0800</lastBuildDate>
+    <atom:link href="https://jackcipher.github.io/oral/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contraction</title>
       <link>https://jackcipher.github.io/oral/contraction/</link>
       <pubDate>Sat, 20 Aug 2022 19:11:38 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/oral/contraction/</guid>
       <description>want to = wanna
 going to = gonna
@@ -25,12 +25,10 @@ would have = would&amp;rsquo;ve / woulda
 what do you = whaddya / waddya
 what did you = whadja / wadja</description>
     </item>
-    
     <item>
       <title>Dark L</title>
       <link>https://jackcipher.github.io/oral/dark-l/</link>
       <pubDate>Wed, 17 Aug 2022 17:13:10 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/oral/dark-l/</guid>
       <description>Dark L Background Plenty of non-native speakers from various language backgrounds may have a hard time with dark L.
 Vocabulary all
@@ -44,15 +42,12 @@ handle
 it&amp;rsquo;ll
 that it&amp;rsquo;ll</description>
     </item>
-    
     <item>
       <title>口语常用短语</title>
       <link>https://jackcipher.github.io/oral/phrase-in-common/</link>
       <pubDate>Sat, 16 Jul 2022 14:20:10 +0800</pubDate>
-      
       <guid>https://jackcipher.github.io/oral/phrase-in-common/</guid>
       <description>you&amp;rsquo;re they&amp;rsquo;re there&amp;rsquo;re what&amp;rsquo;re you gonna wanna that&amp;rsquo;ll that it&amp;rsquo;ll shoulda,coulda,woulda you&amp;rsquo;ve got I got it for you It&amp;rsquo;s for Just for fun This medicine is for headaches are for These flowers are for the wedding.Lines are for suckers.Coupons are for poor peopel. I&amp;rsquo;ll be at at 标准发音 [æt] 作为 Content Word 时，采用标准发音形式 reduce</description>
     </item>
-    
   </channel>
 </rss>
