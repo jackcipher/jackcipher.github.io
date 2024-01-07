@@ -29,7 +29,7 @@ Mount A Configuration File Mounting a configuration via a configMap into a conta
       <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
       <pubDate>Tue, 20 Sep 2022 13:50:58 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
-      <description>随着 M1 芯片的 Macbook 发布，在不同 CPU 架构上运行 Go 服务成为新常态。而实际情况是，使用默认的编译配置，我们在 M1 芯片下构建的镜像，特别是涉及到 Go 应用程序时</description>
+      <description>在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS.在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。</description>
     </item>
     <item>
       <title>Prometheus Relabel 总结</title>
