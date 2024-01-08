@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Jack</title>
+    <link>https://jackcipher.github.io/tags/go/</link>
+    <description>Recent content in go on Jack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 20 Sep 2023 13:50:58 +0800</lastBuildDate>
+    <atom:link href="https://jackcipher.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>构建跨平台 Go 服务</title>
+      <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
+      <pubDate>Wed, 20 Sep 2023 13:50:58 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
+      <description>在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS.在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。</description>
+    </item>
+  </channel>
+</rss>

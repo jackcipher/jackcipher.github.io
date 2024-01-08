@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jackcipher.github.io/posts/build-multiarch-go/</loc>
+    <lastmod>2023-09-20T13:50:58+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/docker-filebeat/</loc>
+    <lastmod>2022-03-05T19:03:19+08:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/posts/gitlab-ci-variable/</loc>
     <lastmod>2024-01-04T06:30:24+00:00</lastmod>
   </url><url>
@@ -14,16 +20,19 @@
     <loc>https://jackcipher.github.io/posts/logstash-in-kuberentes/</loc>
     <lastmod>2023-09-27T14:51:54+08:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/build-multiarch-go/</loc>
+    <loc>https://jackcipher.github.io/tags/docker/</loc>
+    <lastmod>2023-09-20T13:50:58+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/go/</loc>
+    <lastmod>2023-09-20T13:50:58+08:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/</loc>
     <lastmod>2023-09-20T13:50:58+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/prometehus/</loc>
     <lastmod>2022-09-17T17:13:47+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/prom_relabel/</loc>
-    <lastmod>2022-09-17T17:13:47+08:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/tags/</loc>
     <lastmod>2022-09-17T17:13:47+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/tcpdump-in-action/</loc>
@@ -70,12 +79,6 @@
   </url><url>
     <loc>https://jackcipher.github.io/posts/papermod-highlight/</loc>
     <lastmod>2022-03-05T21:20:01+08:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/tags/docker/</loc>
-    <lastmod>2022-03-05T19:03:19+08:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/posts/docker-filebeat/</loc>
-    <lastmod>2022-03-05T19:03:19+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/filebeat/</loc>
     <lastmod>2022-03-05T19:03:19+08:00</lastmod>
