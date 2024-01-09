@@ -67,6 +67,13 @@ Mount A Configuration File Mounting a configuration via a configMap into a conta
       <description>如何控制 Prometheus 保留多少历史记录？ Prometheus 将时间序列及其样本存储在磁盘上。鉴于磁盘空间是一种有限资源，我们希望对 Prometheus 使用的磁盘空间进行一些限制。在以前的版</description>
     </item>
     <item>
+      <title>Go Delve</title>
+      <link>https://jackcipher.github.io/posts/go-delve/</link>
+      <pubDate>Sun, 20 Mar 2022 19:40:53 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/go-delve/</guid>
+      <description>Go 调试 准备工作 安装 delve 项目代码 1 2 git clone git@git.baijiashilian.com:web/demo/go-debug-demo.git git clone git@git.baijiashilian.com:web/gotools/gitlab-tools.git 调试工具 delve delve 安装 https://github.com/go-delve/delve/tree/master/Documentation/installation 1 go install github.com/go-delve/delve/cmd/dlv@latest dlv 配置 1 ~/.dlv/config.yml 调试方式 本地调试 从源码开始编译并开始调试 1 dlv debug [package] [flags] 调试已经编</description>
+    </item>
+    <item>
       <title>Alertmanager 中的周期参数</title>
       <link>https://jackcipher.github.io/posts/alertmanager-duration-args/</link>
       <pubDate>Mon, 14 Mar 2022 08:42:52 +0800</pubDate>
