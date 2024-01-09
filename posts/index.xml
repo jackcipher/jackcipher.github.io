@@ -60,6 +60,13 @@ Mount A Configuration File Mounting a configuration via a configMap into a conta
       <description>Redis 抓包 1 sudo tcpdump -i eth0 tcp and port 6379 -n -nn -s0 -tttt -w redis.cap</description>
     </item>
     <item>
+      <title>Go Rpc</title>
+      <link>https://jackcipher.github.io/posts/go-rpc/</link>
+      <pubDate>Tue, 19 Apr 2022 19:44:28 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/go-rpc/</guid>
+      <description>RPC 技术分享 RPC 介绍 远程过程调用(Remote Procedure Call 缩写 RPC)是一个计算机通信协议,通俗来讲就是调用远程服务上的一个函数，在调用时将对象名、函数</description>
+    </item>
+    <item>
       <title>Prometheus 数据保留时间</title>
       <link>https://jackcipher.github.io/posts/prometheus-retention/</link>
       <pubDate>Thu, 24 Mar 2022 10:12:22 +0800</pubDate>
