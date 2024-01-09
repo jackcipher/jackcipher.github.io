@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitLab on Jack</title>
+    <link>https://jackcipher.github.io/tags/gitlab/</link>
+    <description>Recent content in GitLab on Jack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 04 Jan 2024 06:30:24 +0000</lastBuildDate>
+    <atom:link href="https://jackcipher.github.io/tags/gitlab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitLab CI Variable</title>
+      <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
+      <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>
+      <description>CI/CD 变量是环境变量的一种，通过设置 CI/CD 变量可以： 控制 job 与 pipeline 的行为 存储想复用的变量 避免在 .gitlab-ci.yml 文件中硬编码 CD/CD 的变量定义主要通过两种方式： 通过配置文件 通</description>
+    </item>
+  </channel>
+</rss>
