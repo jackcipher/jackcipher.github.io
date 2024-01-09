@@ -22,5 +22,12 @@
       <guid>https://jackcipher.github.io/posts/docker-filebeat/</guid>
       <description>背景 在收集服务端聊天消息日志时，用到了 Filebeat dissect 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
     </item>
+    <item>
+      <title>Docker 使用的一些总结</title>
+      <link>https://jackcipher.github.io/posts/docker-review/</link>
+      <pubDate>Mon, 09 Jan 2023 18:19:58 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/docker-review/</guid>
+      <description>悬挂镜像 sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。 在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 的镜像。经过查阅资料发现，这些镜</description>
+    </item>
   </channel>
 </rss>

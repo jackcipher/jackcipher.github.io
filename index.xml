@@ -39,6 +39,13 @@ Actually, you might as well keep focus on what configurations Logstash loads if 
 Mount A Configuration File Mounting a configuration via a configMap into a container enables Logstash to load it with creating the container.</description>
     </item>
     <item>
+      <title>Docker 使用的一些总结</title>
+      <link>https://jackcipher.github.io/posts/docker-review/</link>
+      <pubDate>Mon, 09 Jan 2023 18:19:58 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/docker-review/</guid>
+      <description>悬挂镜像 sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。 在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 的镜像。经过查阅资料发现，这些镜</description>
+    </item>
+    <item>
       <title>Prometheus Relabel 总结</title>
       <link>https://jackcipher.github.io/posts/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
