@@ -130,11 +130,11 @@
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>docker buildx build \
-</span></span><span class=line><span class=cl>--tag jackcipher/demo:latest \
-</span></span><span class=line><span class=cl>--platform linux/arm/v7,linux/arm64/v8,linux/amd64 \
-</span></span><span class=line><span class=cl>--builder container \
-</span></span><span class=line><span class=cl>--push .
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>docker buildx build <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--tag jackcipher/demo:latest <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--platform linux/arm/v7,linux/arm64/v8,linux/amd64 <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--builder container <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--push .
 </span></span></code></pre></td></tr></table></div></div><h3 id=33-小结>3.3 小结<a hidden class=anchor aria-hidden=true href=#33-小结>#</a></h3><p>通过 manifest 的方式可以创建多架构的镜像，而 buildx 的方式更简单。不用先创建两个镜像，组装成 manifest 文件再推送 manifest，而是直接通过 buildx 指定 platform 参数，中间的过程全部都是由 buildx 自动完成。在实际使用中，更推荐使用 buildx 的方式。</p><h2 id=4-构建多架构-go-服务实践>4. 构建多架构 Go 服务实践<a hidden class=anchor aria-hidden=true href=#4-构建多架构-go-服务实践>#</a></h2><p>有了前面的基础后，构建多架构的 Go 服务乍一看好像比较简单：Go 在编译时提供了 GOOS 与 GOARCH 参数,构建的时候设置下这两个参数就好了。</p><p>可问题是，当使用 buildx 在外层构建时，内部的 Dockerfile 是如何知道要构建哪个目标的镜像呢？</p><p>在仔细查阅了官方文档后，得知到，当使用 buildx 构建时，buildx 会将一些信息通过 build_arg 的方式传递到 Dockerfile，以方便在 Dockerfile 中使用这些变量。</p><p>根据 <a href=https://docs.docker.com/engine/reference/builder/#automatic-platform-args-in-the-global-scope>文档</a> 可知，以下 ARG 变量会被自动设置：</p><ul><li><code>TARGETPLATFORM</code> - 构建的目标平台，如  <code>linux/amd64</code>, <code>linux/arm/v7</code>, <code>windows/amd64</code>.</li><li><code>TARGETOS</code> - TARGETPLATFORM 对应的 OS</li><li><code>TARGETARCH</code> - TARGETPLATFORM 对应的 CPU 架构</li><li><code>TARGETVARIANT</code> - TARGETPLATFORM 对应的 variant，如指定 platform=linux/arm/v7 那么 arch 就是 arm variant 就是 v7</li><li><code>BUILDPLATFORM</code> - 构建环境的平台</li><li><code>BUILDOS</code> - BUILDPLATFORM 对应的 OS</li><li><code>BUILDARCH</code> - BUILDPLATFORM 对应的架构</li><li><code>BUILDVARIANT</code> - BUILDPLATFORM 对应的 variant</li></ul><p>有了这些变量后，那么在 buildx 中指定 platform 参数后，就可以通知到 Dockerfile 了。</p><h3 id=41-编译目标二进制文件>4.1 编译目标二进制文件<a hidden class=anchor aria-hidden=true href=#41-编译目标二进制文件>#</a></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
@@ -164,17 +164,17 @@
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span><span class=lnt>5
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>docker buildx build \
-</span></span><span class=line><span class=cl>--tag jackcipher/demo:latest \
-</span></span><span class=line><span class=cl>--platform linux/arm/v7,linux/arm64/v8,linux/amd64 \
-</span></span><span class=line><span class=cl>--builder container \
-</span></span><span class=line><span class=cl>--push .
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>docker buildx build <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--tag jackcipher/demo:latest <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--platform linux/arm/v7,linux/arm64/v8,linux/amd64 <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--builder container <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>--push .
 </span></span></code></pre></td></tr></table></div></div><p>这个 Dockerfile 会被多次构建，每次构建时，执行的 go build 参数又不同。在这个 case 中，会分别执行</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>GOOS=linux GOARCH=arm go build
-</span></span><span class=line><span class=cl>GOOS=linux GOARCH=arm64 go build
-</span></span><span class=line><span class=cl>GOOS=linux GOARCH=amd64 go build
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=nv>GOOS</span><span class=o>=</span>linux <span class=nv>GOARCH</span><span class=o>=</span>arm go build
+</span></span><span class=line><span class=cl><span class=nv>GOOS</span><span class=o>=</span>linux <span class=nv>GOARCH</span><span class=o>=</span>arm64 go build
+</span></span><span class=line><span class=cl><span class=nv>GOOS</span><span class=o>=</span>linux <span class=nv>GOARCH</span><span class=o>=</span>amd64 go build
 </span></span></code></pre></td></tr></table></div></div><h2 id=5-ci-中如何使用呢>5. CI 中如何使用呢<a hidden class=anchor aria-hidden=true href=#5-ci-中如何使用呢>#</a></h2><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian20240107233433.png alt=image.png></p><p><img loading=lazy src=https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian20240107233342.png alt=image.png></p><p>将选择 CPU 架构的地方，通过下拉框的形式交给用户选择，再将得到的变量传给 shell 中执行对应的结果即可。</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://jackcipher.github.io/tags/go/>go</a></li><li><a href=https://jackcipher.github.io/tags/docker/>Docker</a></li></ul><nav class=paginav><a class=next href=https://jackcipher.github.io/posts/docker-filebeat/><span class=title>下一页 »</span><br><span>Docker 下 Filebeat 日志收集</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2024 <a href=https://jackcipher.github.io>Jack</a></span>
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
