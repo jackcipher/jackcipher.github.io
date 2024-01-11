@@ -13,7 +13,7 @@
       <link>https://jackcipher.github.io/posts/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
-      <description>Prometheus 的配置中有一个非常不起眼却很实用的配置，它就是 relabel 配置。官方文档中，关于 relabel 的介绍并不多，主要以配置项的格式，取值做了一个描述。本文将结合实际</description>
+      <description>简介 在官方文档中，关于 relabel 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。 本文将结合实际使用经验，将 relabel 的使用场景</description>
     </item>
   </channel>
 </rss>

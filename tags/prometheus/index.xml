@@ -6,8 +6,15 @@
     <description>Recent content in Prometheus on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 24 Mar 2022 10:12:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2024 21:56:48 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从 Blackbox  看监控的 multi-target 模式</title>
+      <link>https://jackcipher.github.io/posts/blackbox-exporter/</link>
+      <pubDate>Thu, 11 Jan 2024 21:56:48 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/blackbox-exporter/</guid>
+      <description>背景 在 Kafka 的监控中，虽然用了 Kafka-exporter 对服务完成了基础指标的收集及监控，但仍然无法保证服务的可用性。 这是因为，当 Kafka 可能处于内网，kafka-expor</description>
+    </item>
     <item>
       <title>Prometheus 数据保留时间</title>
       <link>https://jackcipher.github.io/posts/prometheus-retention/</link>
