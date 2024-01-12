@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 11 Jan 2024 21:56:48 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2024 06:30:24 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>构建跨平台 Go 服务</title>
@@ -23,27 +23,11 @@
       <description>背景 在收集服务端聊天消息日志时，用到了 Filebeat dissect 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
     </item>
     <item>
-      <title>从 Blackbox  看监控的 multi-target 模式</title>
-      <link>https://jackcipher.github.io/posts/blackbox-exporter/</link>
-      <pubDate>Thu, 11 Jan 2024 21:56:48 +0800</pubDate>
-      <guid>https://jackcipher.github.io/posts/blackbox-exporter/</guid>
-      <description>背景 在 Kafka 的监控中，虽然用了 Kafka-exporter 对服务完成了基础指标的收集及监控，但仍然无法保证服务的可用性。 这是因为，当 Kafka 可能处于内网，kafka-expor</description>
-    </item>
-    <item>
       <title>GitLab CI Variable</title>
       <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
       <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>
       <description>CI/CD 变量是环境变量的一种，通过设置 CI/CD 变量可以： 控制 job 与 pipeline 的行为 存储想复用的变量 避免在 .gitlab-ci.yml 文件中硬编码 CD/CD 的变量定义主要通过两种方式： 通过配置文件 通</description>
-    </item>
-    <item>
-      <title>Logstash in Kuberentes</title>
-      <link>https://jackcipher.github.io/posts/logstash-in-kuberentes/</link>
-      <pubDate>Wed, 27 Sep 2023 14:51:54 +0800</pubDate>
-      <guid>https://jackcipher.github.io/posts/logstash-in-kuberentes/</guid>
-      <description>Logstash In Kubernetes When perusing the official Logstash documentation at https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags ,we found that there are a lot of configuration files.Deploying a logstash in a Kubernetes environment could be a challenge at first glance, especially when you&amp;rsquo;re not familar with it.
-Actually, you might as well keep focus on what configurations Logstash loads if you&amp;rsquo;re planning to run an MVP (Minimum Viable Product) with Logstash.
-Mount A Configuration File Mounting a configuration via a configMap into a container enables Logstash to load it with creating the container.</description>
     </item>
     <item>
       <title>Docker 使用的一些总结</title>
@@ -58,13 +42,6 @@ Mount A Configuration File Mounting a configuration via a configMap into a conta
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
       <description>简介 在官方文档中，关于 relabel 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。 本文将结合实际使用经验，将 relabel 的使用场景</description>
-    </item>
-    <item>
-      <title>Tcpdump in Action</title>
-      <link>https://jackcipher.github.io/posts/tcpdump-in-action/</link>
-      <pubDate>Tue, 30 Aug 2022 20:24:24 +0800</pubDate>
-      <guid>https://jackcipher.github.io/posts/tcpdump-in-action/</guid>
-      <description>Redis 抓包 1 sudo tcpdump -i eth0 tcp and port 6379 -n -nn -s0 -tttt -w redis.cap</description>
     </item>
     <item>
       <title>Go RPC 初探</title>

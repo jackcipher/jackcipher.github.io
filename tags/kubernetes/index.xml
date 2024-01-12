@@ -6,17 +6,8 @@
     <description>Recent content in Kubernetes on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 27 Sep 2023 14:51:54 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 10 Mar 2022 23:01:08 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Logstash in Kuberentes</title>
-      <link>https://jackcipher.github.io/posts/logstash-in-kuberentes/</link>
-      <pubDate>Wed, 27 Sep 2023 14:51:54 +0800</pubDate>
-      <guid>https://jackcipher.github.io/posts/logstash-in-kuberentes/</guid>
-      <description>Logstash In Kubernetes When perusing the official Logstash documentation at https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags ,we found that there are a lot of configuration files.Deploying a logstash in a Kubernetes environment could be a challenge at first glance, especially when you&amp;rsquo;re not familar with it.
-Actually, you might as well keep focus on what configurations Logstash loads if you&amp;rsquo;re planning to run an MVP (Minimum Viable Product) with Logstash.
-Mount A Configuration File Mounting a configuration via a configMap into a container enables Logstash to load it with creating the container.</description>
-    </item>
     <item>
       <title>ServiceAccount 的使用</title>
       <link>https://jackcipher.github.io/posts/service-account/</link>
