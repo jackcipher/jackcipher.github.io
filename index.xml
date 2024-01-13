@@ -6,7 +6,7 @@
     <description>Recent content on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 12 Jan 2024 06:31:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jan 2024 14:16:35 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>构建跨平台 Go 服务</title>
@@ -21,6 +21,13 @@
       <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/docker-filebeat/</guid>
       <description>背景 在收集服务端聊天消息日志时，用到了 Filebeat dissect 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
+    </item>
+    <item>
+      <title>文档编写规范</title>
+      <link>https://jackcipher.github.io/posts/standards-for-documentation/</link>
+      <pubDate>Sat, 13 Jan 2024 14:16:35 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/standards-for-documentation/</guid>
+      <description>转载于公司技术委员会 Markdown Markdown Guide Cheat Sheet Basic Syntax Extended Syntax Recommended Apps, Tools, Markdown Tables Generator GitHub Flavored Markdown EWiki https://ewiki.baijiashilian.com/ 内部链接、标题链接 1 2 3 4 [技术规范](./index.md) [首页](../i</description>
     </item>
     <item>
       <title>一文看懂快慢指针</title>
