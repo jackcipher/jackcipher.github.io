@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 12 Jan 2024 06:31:03 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>环形检测之快慢指针</title>
+      <title>一文看懂快慢指针</title>
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>简介 环形检测算法主要用到的是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针，分别称为快指针和慢指针。 一般情况下，慢指针每次走一步，快指</description>
+      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 环形检测算法主要用到的是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针</description>
     </item>
   </channel>
 </rss>
