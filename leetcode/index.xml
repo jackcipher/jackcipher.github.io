@@ -6,14 +6,29 @@
     <description>Recent content in Leetcodes on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 12 Jan 2024 06:31:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>一文看懂快慢指针</title>
+      <title>Brain Kernighan 求解 set bit 个数</title>
+      <link>https://jackcipher.github.io/leetcode/brain-kernighan/</link>
+      <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
+      <guid>https://jackcipher.github.io/leetcode/brain-kernighan/</guid>
+      <description>基础知识 位的命名 二进制位由 0 与 1 组成, 把不同的位分别定义如下： 把值为 1 的位称为 set bit 值为 0 的称为 unset bit 如下图所示，上面的部分为 set bit，下面的为</description>
+    </item>
+    <item>
+      <title>Coin Change</title>
+      <link>https://jackcipher.github.io/leetcode/coin-change/</link>
+      <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
+      <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
+      <description>Coin Change II In the &amp;ldquo;Coin Change II&amp;rdquo; problem, we are given coins of various denominations and a specific amount. Our task is to determine the number of different ways we can make up that amount using the coins. Unlike other coin change problems where we need to minimize or maximize the number of coins, here we need to find the total number of possible combinations.
+For instance, with coins [1,2,5] and amount 5, we have the following combinations:</description>
+    </item>
+    <item>
+      <title>一文看懂快慢指针解法</title>
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 环形检测算法主要用到的是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针</description>
+      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化</description>
     </item>
   </channel>
 </rss>

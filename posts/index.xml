@@ -30,7 +30,7 @@
       <description>转载于公司技术委员会 Markdown Markdown Guide Cheat Sheet Basic Syntax Extended Syntax Recommended Apps, Tools, Markdown Tables Generator GitHub Flavored Markdown EWiki https://ewiki.baijiashilian.com/ 内部链接、标题链接 1 2 3 4 [技术规范](./index.md) [首页](../i</description>
     </item>
     <item>
-      <title>GitLab CI Variable</title>
+      <title>GitLab CI/CD 变量的用法</title>
       <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
       <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>

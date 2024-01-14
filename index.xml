@@ -6,7 +6,7 @@
     <description>Recent content on Jack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 13 Jan 2024 14:16:35 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>构建跨平台 Go 服务</title>
@@ -23,6 +23,21 @@
       <description>背景 在收集服务端聊天消息日志时，用到了 Filebeat dissect 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
     </item>
     <item>
+      <title>Brain Kernighan 求解 set bit 个数</title>
+      <link>https://jackcipher.github.io/leetcode/brain-kernighan/</link>
+      <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
+      <guid>https://jackcipher.github.io/leetcode/brain-kernighan/</guid>
+      <description>基础知识 位的命名 二进制位由 0 与 1 组成, 把不同的位分别定义如下： 把值为 1 的位称为 set bit 值为 0 的称为 unset bit 如下图所示，上面的部分为 set bit，下面的为</description>
+    </item>
+    <item>
+      <title>Coin Change</title>
+      <link>https://jackcipher.github.io/leetcode/coin-change/</link>
+      <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
+      <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
+      <description>Coin Change II In the &amp;ldquo;Coin Change II&amp;rdquo; problem, we are given coins of various denominations and a specific amount. Our task is to determine the number of different ways we can make up that amount using the coins. Unlike other coin change problems where we need to minimize or maximize the number of coins, here we need to find the total number of possible combinations.
+For instance, with coins [1,2,5] and amount 5, we have the following combinations:</description>
+    </item>
+    <item>
       <title>文档编写规范</title>
       <link>https://jackcipher.github.io/posts/standards-for-documentation/</link>
       <pubDate>Sat, 13 Jan 2024 14:16:35 +0800</pubDate>
@@ -30,14 +45,14 @@
       <description>转载于公司技术委员会 Markdown Markdown Guide Cheat Sheet Basic Syntax Extended Syntax Recommended Apps, Tools, Markdown Tables Generator GitHub Flavored Markdown EWiki https://ewiki.baijiashilian.com/ 内部链接、标题链接 1 2 3 4 [技术规范](./index.md) [首页](../i</description>
     </item>
     <item>
-      <title>一文看懂快慢指针</title>
+      <title>一文看懂快慢指针解法</title>
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 环形检测算法主要用到的是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针</description>
+      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化</description>
     </item>
     <item>
-      <title>GitLab CI Variable</title>
+      <title>GitLab CI/CD 变量的用法</title>
       <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
       <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>
@@ -90,6 +105,13 @@ special
 handle
 it&amp;rsquo;ll
 that it&amp;rsquo;ll</description>
+    </item>
+    <item>
+      <title>应该如何连读</title>
+      <link>https://jackcipher.github.io/oral/linking/</link>
+      <pubDate>Wed, 17 Aug 2022 17:13:10 +0800</pubDate>
+      <guid>https://jackcipher.github.io/oral/linking/</guid>
+      <description>简介 元音之间连接 intuitive ruin</description>
     </item>
     <item>
       <title>口语常用短语</title>

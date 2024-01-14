@@ -8,7 +8,7 @@
     <language>zh</language>
     <atom:link href="https://jackcipher.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GitLab CI Variable</title>
+      <title>GitLab CI/CD 变量的用法</title>
       <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
       <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>
