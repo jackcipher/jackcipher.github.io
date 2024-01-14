@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Brain Kernighan 求解 set bit 个数</title>
-      <link>https://jackcipher.github.io/leetcode/brain-kernighan/</link>
+      <title>Brian Kernighan 求解 set bit 个数</title>
+      <link>https://jackcipher.github.io/leetcode/brian-kernighan/</link>
       <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
-      <guid>https://jackcipher.github.io/leetcode/brain-kernighan/</guid>
+      <guid>https://jackcipher.github.io/leetcode/brian-kernighan/</guid>
       <description>基础知识 位的命名 二进制位由 0 与 1 组成, 把不同的位分别定义如下： 把值为 1 的位称为 set bit 值为 0 的称为 unset bit 如下图所示，上面的部分为 set bit，下面的为</description>
     </item>
     <item>

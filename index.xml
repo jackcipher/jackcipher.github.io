@@ -23,10 +23,10 @@
       <description>背景 在收集服务端聊天消息日志时，用到了 Filebeat dissect 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
     </item>
     <item>
-      <title>Brain Kernighan 求解 set bit 个数</title>
-      <link>https://jackcipher.github.io/leetcode/brain-kernighan/</link>
+      <title>Brian Kernighan 求解 set bit 个数</title>
+      <link>https://jackcipher.github.io/leetcode/brian-kernighan/</link>
       <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
-      <guid>https://jackcipher.github.io/leetcode/brain-kernighan/</guid>
+      <guid>https://jackcipher.github.io/leetcode/brian-kernighan/</guid>
       <description>基础知识 位的命名 二进制位由 0 与 1 组成, 把不同的位分别定义如下： 把值为 1 的位称为 set bit 值为 0 的称为 unset bit 如下图所示，上面的部分为 set bit，下面的为</description>
     </item>
     <item>
