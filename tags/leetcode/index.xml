@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>LeetCode on Jack</title>
     <link>https://jackcipher.github.io/tags/leetcode/</link>
     <description>Recent content in LeetCode on Jack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,27 @@
       <link>https://jackcipher.github.io/leetcode/brian-kernighan/</link>
       <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/brian-kernighan/</guid>
-      <description>基础知识 位的命名 二进制位由 0 与 1 组成, 把不同的位分别定义如下： 把值为 1 的位称为 set bit 值为 0 的称为 unset bit 如下图所示，上面的部分为 set bit，下面的为</description>
+      <description>&lt;h2 id=&#34;基础知识&#34;&gt;基础知识&lt;/h2&gt;
+&lt;h3 id=&#34;位的命名&#34;&gt;位的命名&lt;/h3&gt;
+&lt;p&gt;二进制位由 0 与 1 组成, 把不同的位分别定义如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把值为 1 的位称为 &lt;code&gt;set bit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;值为 0 的称为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如下图所示，上面的部分为 &lt;code&gt;set bit&lt;/code&gt;，下面的为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;按位与操作&#34;&gt;按位与操作(&amp;amp;)&lt;/h3&gt;
+&lt;p&gt;按位与操作：bitwise AND operator&lt;/p&gt;</description>
     </item>
     <item>
       <title>一文看懂快慢指针解法</title>
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化</description>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。&lt;/p&gt;
+&lt;p&gt;我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针，分别称为快指针和慢指针。慢指针每次走一步，快指针每次走两步。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

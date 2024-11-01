@@ -1,33 +1,136 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>go on Jack</title>
+    <title>Go on Jack</title>
     <link>https://jackcipher.github.io/tags/go/</link>
-    <description>Recent content in go on Jack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Go on Jack</description>
+    <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 20 Sep 2023 13:50:58 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2024 11:17:25 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GORM v1.25 错误处理机制的变化</title>
+      <link>https://jackcipher.github.io/posts/gorm-v1.25/</link>
+      <pubDate>Fri, 01 Nov 2024 11:17:25 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/gorm-v1.25/</guid>
+      <description>&lt;h2 id=&#34;传统的错误处理方式&#34;&gt;传统的错误处理方式&lt;/h2&gt;
+&lt;p&gt;在 GORM 的使用过程中，&lt;code&gt;gorm.ErrNotFound&lt;/code&gt; 是最基础且使用最广泛的错误类型。作为开发者，我们习惯性地使用这种方式来处理查询未找到记录的情况：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>构建跨平台 Go 服务</title>
       <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
       <pubDate>Wed, 20 Sep 2023 13:50:58 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
-      <description>背景 在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦</description>
+      <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go RPC 初探</title>
       <link>https://jackcipher.github.io/posts/go-rpc/</link>
       <pubDate>Tue, 19 Apr 2022 19:44:28 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/go-rpc/</guid>
-      <description>RPC 技术分享 RPC 介绍 远程过程调用(Remote Procedure Call 缩写 RPC)是一个计算机通信协议,通俗来讲就是调用远程服务上的一个函数，在调用时将对象名、函数</description>
+      <description>&lt;h1 id=&#34;rpc-技术分享&#34;&gt;RPC 技术分享&lt;/h1&gt;
+&lt;h2 id=&#34;rpc-介绍&#34;&gt;RPC 介绍&lt;/h2&gt;
+&lt;p&gt;远程过程调用(Remote Procedure Call 缩写 RPC)是一个计算机通信协议,通俗来讲就是调用远程服务上的一个函数，在调用时将对象名、函数名、参数等传递给远程服务器，服务器将处理结果返回给客户端，客户端调用 server 端提供的接口就像是调用本地的函数一样。 RPC 的消息可以通过 TCP、UDP 或者 HTTP 等传输。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go 之 Delve 调试</title>
       <link>https://jackcipher.github.io/posts/go-delve/</link>
       <pubDate>Sun, 20 Mar 2022 19:40:53 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/go-delve/</guid>
-      <description>准备工作 安装 delve 项目代码 1 2 git clone git@git.baijiashilian.com:web/demo/go-debug-demo.git git clone git@git.baijiashilian.com:web/gotools/gitlab-tools.git 调试工具 delve delve 安装 https://github.com/go-delve/delve/tree/master/Documentation/installation 1 go install github.com/go-delve/delve/cmd/dlv@latest dlv 配置 1 ~/.dlv/config.yml 调试方式 本地调试 从源码开始编译并开始调试 1 dlv debug [package] [flags] 调试已经编译好的</description>
+      <description>&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 delve&lt;/li&gt;
+&lt;li&gt;项目代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone git@git.baijiashilian.com:web/demo/go-debug-demo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone git@git.baijiashilian.com:web/gotools/gitlab-tools.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;调试工具-delve&#34;&gt;调试工具 delve&lt;/h2&gt;
+&lt;h3 id=&#34;delve-安装&#34;&gt;delve 安装&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/go-delve/delve/tree/master/Documentation/installation&#34;&gt;https://github.com/go-delve/delve/tree/master/Documentation/installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install github.com/go-delve/delve/cmd/dlv@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;dlv-配置&#34;&gt;dlv 配置&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~/.dlv/config.yml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;调试方式&#34;&gt;调试方式&lt;/h2&gt;
+&lt;h3 id=&#34;本地调试&#34;&gt;本地调试&lt;/h3&gt;
+&lt;h4 id=&#34;从源码开始编译并开始调试&#34;&gt;从源码开始编译并开始调试&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv debug &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;package&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;调试已经编译好的二进制文件&#34;&gt;调试已经编译好的二进制文件&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; ./hello -- args1 args2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;编译的时候需要禁用编译器优化：&lt;code&gt;go build -gcflags=&amp;quot;-N -l&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;编译选项有哪些：&lt;code&gt;go tool compile -h&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;调试正在运行的进程&#34;&gt;调试正在运行的进程&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv attach pid &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;executable&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;调试单元测试&#34;&gt;调试单元测试&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;package&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;远程调试&#34;&gt;远程调试&lt;/h3&gt;
+&lt;h4 id=&#34;json-rpc--dap&#34;&gt;JSON-RPC &amp;amp; DAP&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv --headless --listen 0.0.0.0:2345 &amp;lt;command&amp;gt; &amp;lt;target&amp;gt; &amp;lt;args&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;兼容&lt;code&gt;dlv connect&lt;/code&gt;、&lt;code&gt;VS Code Go&lt;/code&gt;、&lt;code&gt;GoLand&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Prometehus on Jack</title>
     <link>https://jackcipher.github.io/tags/prometehus/</link>
     <description>Recent content in Prometehus on Jack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 17 Sep 2022 17:13:47 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/prometehus/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,9 @@
       <link>https://jackcipher.github.io/posts/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
-      <description>简介 在官方文档中，关于 relabel 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。 本文将结合实际使用经验，将 relabel 的使用场景</description>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;在官方文档中，关于 &lt;code&gt;relabel&lt;/code&gt; 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。&lt;/p&gt;
+&lt;p&gt;本文将结合实际使用经验，将 &lt;code&gt;relabel&lt;/code&gt; 的使用场景做一个总结。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

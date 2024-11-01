@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on Jack</title>
     <link>https://jackcipher.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on Jack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 05 Mar 2022 21:20:01 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,9 @@
       <link>https://jackcipher.github.io/posts/papermod-highlight/</link>
       <pubDate>Sat, 05 Mar 2022 21:20:01 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/papermod-highlight/</guid>
-      <description>背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内</description>
+      <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
+&lt;p&gt;PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; 来生成代码高亮。&lt;/p&gt;
+&lt;p&gt;Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内置了 Chroma 工具。Hugo 关于 Chroma 的文档在 &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

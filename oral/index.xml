@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Orals on Jack</title>
     <link>https://jackcipher.github.io/oral/</link>
     <description>Recent content in Orals on Jack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 20 Aug 2022 19:11:38 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/oral/index.xml" rel="self" type="application/rss+xml" />
@@ -13,48 +13,137 @@
       <link>https://jackcipher.github.io/oral/contraction/</link>
       <pubDate>Sat, 20 Aug 2022 19:11:38 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/contraction/</guid>
-      <description>want to = wanna
-going to = gonna
-have got to = gotta
-out of = outta
-kind of = kinda
-a lot of = a lotta
-don&amp;rsquo;t know = dunno
-give me = gimme
-would have = would&amp;rsquo;ve / woulda
-what do you = whaddya / waddya
-what did you = whadja / wadja</description>
+      <description>&lt;p&gt;want to = wanna&lt;/p&gt;
+&lt;p&gt;going to = gonna&lt;/p&gt;
+&lt;p&gt;have got to = gotta&lt;/p&gt;
+&lt;p&gt;out of = outta&lt;/p&gt;
+&lt;p&gt;kind of = kinda&lt;/p&gt;
+&lt;p&gt;a lot of = a lotta&lt;/p&gt;
+&lt;p&gt;don&amp;rsquo;t know = dunno&lt;/p&gt;
+&lt;p&gt;give me = gimme&lt;/p&gt;
+&lt;p&gt;would have = would&amp;rsquo;ve / woulda&lt;/p&gt;
+&lt;p&gt;what do you = whaddya / waddya&lt;/p&gt;
+&lt;p&gt;what did you = whadja / wadja&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dark L</title>
       <link>https://jackcipher.github.io/oral/dark-l/</link>
       <pubDate>Wed, 17 Aug 2022 17:13:10 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/dark-l/</guid>
-      <description>Dark L Background Plenty of non-native speakers from various language backgrounds may have a hard time with dark L.
-Vocabulary all
-well
-feel
-real
-kill
-email
-special
-handle
-it&amp;rsquo;ll
-that it&amp;rsquo;ll</description>
+      <description>&lt;h2 id=&#34;dark-l&#34;&gt;Dark L&lt;/h2&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;Plenty of non-native speakers from various language backgrounds may have a hard time with dark L.&lt;/p&gt;
+&lt;h3 id=&#34;vocabulary&#34;&gt;Vocabulary&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;all&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;well&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;feel&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;real&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kill&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;email&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;special&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;handle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;it&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that it&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>应该如何连读</title>
       <link>https://jackcipher.github.io/oral/linking/</link>
       <pubDate>Wed, 17 Aug 2022 17:13:10 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/linking/</guid>
-      <description>简介 元音之间连接 intuitive ruin</description>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;h2 id=&#34;元音之间连接&#34;&gt;元音之间连接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;intuitive&lt;/li&gt;
+&lt;li&gt;ruin&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>口语常用短语</title>
       <link>https://jackcipher.github.io/oral/phrase-in-common/</link>
       <pubDate>Sat, 16 Jul 2022 14:20:10 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/phrase-in-common/</guid>
-      <description>you&amp;rsquo;re they&amp;rsquo;re there&amp;rsquo;re what&amp;rsquo;re you gonna wanna that&amp;rsquo;ll that it&amp;rsquo;ll shoulda,coulda,woulda you&amp;rsquo;ve got I got it for you It&amp;rsquo;s for Just for fun This medicine is for headaches are for These flowers are for the wedding.Lines are for suckers.Coupons are for poor peopel. I&amp;rsquo;ll be at at 标准发音 [æt] 作为 Content Word 时，采用标准发音形式 reduce</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;you&amp;rsquo;re&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;they&amp;rsquo;re&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;there&amp;rsquo;re&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what&amp;rsquo;re you&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gonna&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wanna&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that it&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shoulda,coulda,woulda&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;you&amp;rsquo;ve got&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I got it for you&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;rsquo;s for&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Just for fun&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This medicine is for headaches&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;are for&lt;/p&gt;
+&lt;p&gt;These flowers are for the wedding.Lines are for suckers.Coupons are for poor peopel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;ll be at&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;at&#34;&gt;at&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;标准发音 [æt]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作为 Content Word 时，采用标准发音形式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;reduce to schwa vowel with stop T
+consonant: [ət|]&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

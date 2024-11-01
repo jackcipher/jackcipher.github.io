@@ -1,173 +1,462 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jack</title>
     <link>https://jackcipher.github.io/</link>
     <description>Recent content on Jack</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2024 11:17:25 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>构建跨平台 Go 服务</title>
-      <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
-      <pubDate>Wed, 20 Sep 2023 13:50:58 +0800</pubDate>
-      <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
-      <description>背景 在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦</description>
-    </item>
-    <item>
-      <title>Docker 下 Filebeat 日志收集</title>
-      <link>https://jackcipher.github.io/posts/docker-filebeat/</link>
-      <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
-      <guid>https://jackcipher.github.io/posts/docker-filebeat/</guid>
-      <description>背景 在收集服务端聊天消息日志时，用到了 Filebeat dissect 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3 考虑到日志收集工作的普遍性，为了</description>
+      <title>GORM v1.25 错误处理机制的变化</title>
+      <link>https://jackcipher.github.io/posts/gorm-v1.25/</link>
+      <pubDate>Fri, 01 Nov 2024 11:17:25 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/gorm-v1.25/</guid>
+      <description>&lt;h2 id=&#34;传统的错误处理方式&#34;&gt;传统的错误处理方式&lt;/h2&gt;
+&lt;p&gt;在 GORM 的使用过程中，&lt;code&gt;gorm.ErrNotFound&lt;/code&gt; 是最基础且使用最广泛的错误类型。作为开发者，我们习惯性地使用这种方式来处理查询未找到记录的情况：&lt;/p&gt;</description>
     </item>
     <item>
       <title>Brian Kernighan 求解 set bit 个数</title>
       <link>https://jackcipher.github.io/leetcode/brian-kernighan/</link>
       <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/brian-kernighan/</guid>
-      <description>基础知识 位的命名 二进制位由 0 与 1 组成, 把不同的位分别定义如下： 把值为 1 的位称为 set bit 值为 0 的称为 unset bit 如下图所示，上面的部分为 set bit，下面的为</description>
+      <description>&lt;h2 id=&#34;基础知识&#34;&gt;基础知识&lt;/h2&gt;
+&lt;h3 id=&#34;位的命名&#34;&gt;位的命名&lt;/h3&gt;
+&lt;p&gt;二进制位由 0 与 1 组成, 把不同的位分别定义如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;把值为 1 的位称为 &lt;code&gt;set bit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;值为 0 的称为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如下图所示，上面的部分为 &lt;code&gt;set bit&lt;/code&gt;，下面的为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;按位与操作&#34;&gt;按位与操作(&amp;amp;)&lt;/h3&gt;
+&lt;p&gt;按位与操作：bitwise AND operator&lt;/p&gt;</description>
     </item>
     <item>
       <title>Coin Change</title>
       <link>https://jackcipher.github.io/leetcode/coin-change/</link>
       <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
-      <description>Coin Change II In the &amp;ldquo;Coin Change II&amp;rdquo; problem, we are given coins of various denominations and a specific amount. Our task is to determine the number of different ways we can make up that amount using the coins. Unlike other coin change problems where we need to minimize or maximize the number of coins, here we need to find the total number of possible combinations.
-For instance, with coins [1,2,5] and amount 5, we have the following combinations:</description>
+      <description>&lt;h2 id=&#34;coin-change-ii&#34;&gt;Coin Change II&lt;/h2&gt;
+&lt;p&gt;In the &amp;ldquo;Coin Change II&amp;rdquo; problem, we are given coins of various denominations and a specific amount. Our task is to determine the number of different ways we can make up that amount using the coins. Unlike other coin change problems where we need to minimize or maximize the number of coins, here we need to find the total number of possible combinations.&lt;/p&gt;
+&lt;p&gt;For instance, with coins [1,2,5] and amount 5, we have the following combinations:&lt;/p&gt;</description>
     </item>
     <item>
       <title>文档编写规范</title>
       <link>https://jackcipher.github.io/posts/standards-for-documentation/</link>
       <pubDate>Sat, 13 Jan 2024 14:16:35 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/standards-for-documentation/</guid>
-      <description>转载于公司技术委员会 Markdown Markdown Guide Cheat Sheet Basic Syntax Extended Syntax Recommended Apps, Tools, Markdown Tables Generator GitHub Flavored Markdown EWiki https://ewiki.baijiashilian.com/ 内部链接、标题链接 1 2 3 4 [技术规范](./index.md) [首页](../i</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;转载于公司技术委员会&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;markdown&#34;&gt;Markdown&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/getting-started/&#34;&gt;Markdown Guide&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/cheat-sheet/&#34;&gt;Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/basic-syntax/&#34;&gt;Basic Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/extended-syntax/&#34;&gt;Extended Syntax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/getting-started/#documents&#34;&gt;Recommended Apps&lt;/a&gt;, &lt;a href=&#34;https://www.markdownguide.org/tools/&#34;&gt;Tools&lt;/a&gt;, &lt;a href=&#34;https://www.tablesgenerator.com/markdown_tables&#34;&gt;Markdown Tables Generator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ewiki&#34;&gt;EWiki&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://ewiki.baijiashilian.com/&#34;&gt;https://ewiki.baijiashilian.com/&lt;/a&gt;&lt;/p&gt;
+&lt;!--
+- [EWiki 数据仓库](https://git.baijiashilian.com/web/ewiki-repo)
+
+- [EWiki 代码仓库](https://git.baijiashilian.com/web/ewiki)
+--&gt;
+&lt;ul&gt;
+&lt;li&gt;内部链接、标题链接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;技术规范&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;./index.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;首页&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;../index.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;技术分享&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;../技术培训/技术分享计划&amp;amp;记录.md&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;Markdown&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;#markdown&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;检查工具&#34;&gt;检查工具&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EWiki 内嵌实时检查工具&lt;/li&gt;
+&lt;li&gt;手动检查工具 &lt;a href=&#34;https://lint-md.baijiashilian.com/&#34;&gt;https://lint-md.baijiashilian.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ewiki.baijiashilian.com/BTC/%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83/CICD/MarkDown%20Lint%20%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md&#34;&gt;相关文档，Chrome、VS Code 插件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/lint-md/lint-md&#34;&gt;https://github.com/lint-md/lint-md&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>一文看懂快慢指针解法</title>
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>简介 快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。 我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化</description>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。&lt;/p&gt;
+&lt;p&gt;我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针，分别称为快指针和慢指针。慢指针每次走一步，快指针每次走两步。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitLab CI/CD 变量的用法</title>
       <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
       <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>
-      <description>CI/CD 变量是环境变量的一种，通过设置 CI/CD 变量可以： 控制 job 与 pipeline 的行为 存储想复用的变量 避免在 .gitlab-ci.yml 文件中硬编码 CD/CD 的变量定义主要通过两种方式： 通过配置文件 通</description>
+      <description>&lt;p&gt;CI/CD 变量是环境变量的一种，通过设置 CI/CD 变量可以：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;控制 job 与 pipeline 的行为&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;存储想复用的变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;避免在 .gitlab-ci.yml 文件中硬编码&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;CD/CD 的变量定义主要通过两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过配置文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过项目设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1-通过配置文件&#34;&gt;1. 通过配置文件&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;.gitlab-ci.yml&lt;/code&gt; 文件中，使用 &lt;code&gt;variables&lt;/code&gt; 关键词可以定义变量。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>构建跨平台 Go 服务</title>
+      <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
+      <pubDate>Wed, 20 Sep 2023 13:50:58 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
+      <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker 使用的一些总结</title>
       <link>https://jackcipher.github.io/posts/docker-review/</link>
       <pubDate>Mon, 09 Jan 2023 18:19:58 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/docker-review/</guid>
-      <description>悬挂镜像 sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。 在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 的镜像。经过查阅资料发现，这些镜</description>
+      <description>&lt;h2 id=&#34;悬挂镜像&#34;&gt;悬挂镜像&lt;/h2&gt;
+&lt;p&gt;sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。&lt;/p&gt;
+&lt;p&gt;在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 &lt;none&gt; 的镜像。经过查阅资料发现，这些镜像称为悬挂镜像(dangling image)。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus Relabel 总结</title>
       <link>https://jackcipher.github.io/posts/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 17:13:47 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
-      <description>简介 在官方文档中，关于 relabel 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。 本文将结合实际使用经验，将 relabel 的使用场景</description>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;在官方文档中，关于 &lt;code&gt;relabel&lt;/code&gt; 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。&lt;/p&gt;
+&lt;p&gt;本文将结合实际使用经验，将 &lt;code&gt;relabel&lt;/code&gt; 的使用场景做一个总结。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contraction</title>
       <link>https://jackcipher.github.io/oral/contraction/</link>
       <pubDate>Sat, 20 Aug 2022 19:11:38 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/contraction/</guid>
-      <description>want to = wanna
-going to = gonna
-have got to = gotta
-out of = outta
-kind of = kinda
-a lot of = a lotta
-don&amp;rsquo;t know = dunno
-give me = gimme
-would have = would&amp;rsquo;ve / woulda
-what do you = whaddya / waddya
-what did you = whadja / wadja</description>
+      <description>&lt;p&gt;want to = wanna&lt;/p&gt;
+&lt;p&gt;going to = gonna&lt;/p&gt;
+&lt;p&gt;have got to = gotta&lt;/p&gt;
+&lt;p&gt;out of = outta&lt;/p&gt;
+&lt;p&gt;kind of = kinda&lt;/p&gt;
+&lt;p&gt;a lot of = a lotta&lt;/p&gt;
+&lt;p&gt;don&amp;rsquo;t know = dunno&lt;/p&gt;
+&lt;p&gt;give me = gimme&lt;/p&gt;
+&lt;p&gt;would have = would&amp;rsquo;ve / woulda&lt;/p&gt;
+&lt;p&gt;what do you = whaddya / waddya&lt;/p&gt;
+&lt;p&gt;what did you = whadja / wadja&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dark L</title>
       <link>https://jackcipher.github.io/oral/dark-l/</link>
       <pubDate>Wed, 17 Aug 2022 17:13:10 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/dark-l/</guid>
-      <description>Dark L Background Plenty of non-native speakers from various language backgrounds may have a hard time with dark L.
-Vocabulary all
-well
-feel
-real
-kill
-email
-special
-handle
-it&amp;rsquo;ll
-that it&amp;rsquo;ll</description>
+      <description>&lt;h2 id=&#34;dark-l&#34;&gt;Dark L&lt;/h2&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;Plenty of non-native speakers from various language backgrounds may have a hard time with dark L.&lt;/p&gt;
+&lt;h3 id=&#34;vocabulary&#34;&gt;Vocabulary&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;all&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;well&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;feel&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;real&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;kill&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;email&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;special&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;handle&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;it&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that it&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>应该如何连读</title>
       <link>https://jackcipher.github.io/oral/linking/</link>
       <pubDate>Wed, 17 Aug 2022 17:13:10 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/linking/</guid>
-      <description>简介 元音之间连接 intuitive ruin</description>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;h2 id=&#34;元音之间连接&#34;&gt;元音之间连接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;intuitive&lt;/li&gt;
+&lt;li&gt;ruin&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>口语常用短语</title>
       <link>https://jackcipher.github.io/oral/phrase-in-common/</link>
       <pubDate>Sat, 16 Jul 2022 14:20:10 +0800</pubDate>
       <guid>https://jackcipher.github.io/oral/phrase-in-common/</guid>
-      <description>you&amp;rsquo;re they&amp;rsquo;re there&amp;rsquo;re what&amp;rsquo;re you gonna wanna that&amp;rsquo;ll that it&amp;rsquo;ll shoulda,coulda,woulda you&amp;rsquo;ve got I got it for you It&amp;rsquo;s for Just for fun This medicine is for headaches are for These flowers are for the wedding.Lines are for suckers.Coupons are for poor peopel. I&amp;rsquo;ll be at at 标准发音 [æt] 作为 Content Word 时，采用标准发音形式 reduce</description>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;you&amp;rsquo;re&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;they&amp;rsquo;re&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;there&amp;rsquo;re&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;what&amp;rsquo;re you&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gonna&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;wanna&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;that it&amp;rsquo;ll&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;shoulda,coulda,woulda&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;you&amp;rsquo;ve got&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I got it for you&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;rsquo;s for&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Just for fun&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This medicine is for headaches&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;are for&lt;/p&gt;
+&lt;p&gt;These flowers are for the wedding.Lines are for suckers.Coupons are for poor peopel.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I&amp;rsquo;ll be at&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;at&#34;&gt;at&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;标准发音 [æt]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作为 Content Word 时，采用标准发音形式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;reduce to schwa vowel with stop T
+consonant: [ət|]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go RPC 初探</title>
       <link>https://jackcipher.github.io/posts/go-rpc/</link>
       <pubDate>Tue, 19 Apr 2022 19:44:28 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/go-rpc/</guid>
-      <description>RPC 技术分享 RPC 介绍 远程过程调用(Remote Procedure Call 缩写 RPC)是一个计算机通信协议,通俗来讲就是调用远程服务上的一个函数，在调用时将对象名、函数</description>
+      <description>&lt;h1 id=&#34;rpc-技术分享&#34;&gt;RPC 技术分享&lt;/h1&gt;
+&lt;h2 id=&#34;rpc-介绍&#34;&gt;RPC 介绍&lt;/h2&gt;
+&lt;p&gt;远程过程调用(Remote Procedure Call 缩写 RPC)是一个计算机通信协议,通俗来讲就是调用远程服务上的一个函数，在调用时将对象名、函数名、参数等传递给远程服务器，服务器将处理结果返回给客户端，客户端调用 server 端提供的接口就像是调用本地的函数一样。 RPC 的消息可以通过 TCP、UDP 或者 HTTP 等传输。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus 数据保留时间</title>
       <link>https://jackcipher.github.io/posts/prometheus-retention/</link>
       <pubDate>Thu, 24 Mar 2022 10:12:22 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/prometheus-retention/</guid>
-      <description>如何控制 Prometheus 保留多少历史记录？ Prometheus 将时间序列及其样本存储在磁盘上。鉴于磁盘空间是一种有限资源，我们希望对 Prometheus 使用的磁盘空间进行一些限制。在以前的版</description>
+      <description>&lt;p&gt;如何控制 Prometheus 保留多少历史记录？&lt;/p&gt;
+&lt;p&gt;Prometheus 将时间序列及其样本存储在磁盘上。鉴于磁盘空间是一种有限资源，我们希望对 Prometheus 使用的磁盘空间进行一些限制。在以前的版本中，使用 &lt;code&gt;--storage.tsdb.retention&lt;/code&gt; 参数即可完成配置。这个参数指定 Prometheus 将保持可用的时间范围。这是最低要求，因此如果其中一些仍在保留窗口内，它将保留整个块。如果您知道每秒样本的摄取率，那么您可以将其乘以每个样本的字节数（1.5ish，为了安全起见为 2）和保留时间，以了解将使用多少磁盘空间。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go 之 Delve 调试</title>
       <link>https://jackcipher.github.io/posts/go-delve/</link>
       <pubDate>Sun, 20 Mar 2022 19:40:53 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/go-delve/</guid>
-      <description>准备工作 安装 delve 项目代码 1 2 git clone git@git.baijiashilian.com:web/demo/go-debug-demo.git git clone git@git.baijiashilian.com:web/gotools/gitlab-tools.git 调试工具 delve delve 安装 https://github.com/go-delve/delve/tree/master/Documentation/installation 1 go install github.com/go-delve/delve/cmd/dlv@latest dlv 配置 1 ~/.dlv/config.yml 调试方式 本地调试 从源码开始编译并开始调试 1 dlv debug [package] [flags] 调试已经编译好的</description>
+      <description>&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 delve&lt;/li&gt;
+&lt;li&gt;项目代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone git@git.baijiashilian.com:web/demo/go-debug-demo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone git@git.baijiashilian.com:web/gotools/gitlab-tools.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;调试工具-delve&#34;&gt;调试工具 delve&lt;/h2&gt;
+&lt;h3 id=&#34;delve-安装&#34;&gt;delve 安装&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/go-delve/delve/tree/master/Documentation/installation&#34;&gt;https://github.com/go-delve/delve/tree/master/Documentation/installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;go install github.com/go-delve/delve/cmd/dlv@latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;dlv-配置&#34;&gt;dlv 配置&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~/.dlv/config.yml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;调试方式&#34;&gt;调试方式&lt;/h2&gt;
+&lt;h3 id=&#34;本地调试&#34;&gt;本地调试&lt;/h3&gt;
+&lt;h4 id=&#34;从源码开始编译并开始调试&#34;&gt;从源码开始编译并开始调试&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv debug &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;package&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;调试已经编译好的二进制文件&#34;&gt;调试已经编译好的二进制文件&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv &lt;span class=&#34;nb&#34;&gt;exec&lt;/span&gt; ./hello -- args1 args2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;编译的时候需要禁用编译器优化：&lt;code&gt;go build -gcflags=&amp;quot;-N -l&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;编译选项有哪些：&lt;code&gt;go tool compile -h&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;调试正在运行的进程&#34;&gt;调试正在运行的进程&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv attach pid &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;executable&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;调试单元测试&#34;&gt;调试单元测试&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv &lt;span class=&#34;nb&#34;&gt;test&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;package&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;flags&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;远程调试&#34;&gt;远程调试&lt;/h3&gt;
+&lt;h4 id=&#34;json-rpc--dap&#34;&gt;JSON-RPC &amp;amp; DAP&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dlv --headless --listen 0.0.0.0:2345 &amp;lt;command&amp;gt; &amp;lt;target&amp;gt; &amp;lt;args&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;兼容&lt;code&gt;dlv connect&lt;/code&gt;、&lt;code&gt;VS Code Go&lt;/code&gt;、&lt;code&gt;GoLand&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alertmanager 中的周期参数</title>
       <link>https://jackcipher.github.io/posts/alertmanager-duration-args/</link>
       <pubDate>Mon, 14 Mar 2022 08:42:52 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/alertmanager-duration-args/</guid>
-      <description>在 Alertmanager 中有三个跟周期相关的参数，分别是 group_wait, group_interval, repeat_interval。合理地配置参数，有利于降低告警频率，避免告警风暴产生。 在深入了解这三</description>
+      <description>&lt;p&gt;在 Alertmanager 中有三个跟周期相关的参数，分别是 group_wait, group_interval, repeat_interval。合理地配置参数，有利于降低告警频率，避免告警风暴产生。&lt;/p&gt;
+&lt;p&gt;在深入了解这三个参数之前，首先需要关注到 Prometheus 中也有两个周期函数，scrape_interval 与 evaluation_interval。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus 增加身份认证</title>
       <link>https://jackcipher.github.io/posts/prom_with_auth/</link>
       <pubDate>Sat, 12 Mar 2022 16:22:20 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/prom_with_auth/</guid>
-      <description>Prometheus 除了提供时序数据库和监控系统存在，其本身也对外提供了 Web 服务，用于提供报表展示及表达式计算，以及用于更新配置文件等功能的 API。 处于安全考虑</description>
+      <description>&lt;p&gt;Prometheus 除了提供时序数据库和监控系统存在，其本身也对外提供了 Web 服务，用于提供报表展示及表达式计算，以及用于更新配置文件等功能的 API。&lt;/p&gt;
+&lt;p&gt;处于安全考虑，在对外的 Web 服务里，我们需要增加身份认证。Prometheus 提供 Basic Auth 身份认证。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ServiceAccount 的使用</title>
       <link>https://jackcipher.github.io/posts/service-account/</link>
       <pubDate>Thu, 10 Mar 2022 23:01:08 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/service-account/</guid>
-      <description>概念 Kubernetes 中，Pod 内部进程想要访问 API Server，就需要用到 ServiceAccount。ServiceAccount 类似业务系统里的账户，用</description>
+      <description>&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+&lt;p&gt;Kubernetes 中，Pod 内部进程想要访问 API Server，就需要用到 ServiceAccount。ServiceAccount 类似业务系统里的账户，用于为 Pod 提供身份。&lt;/p&gt;</description>
     </item>
     <item>
       <title>PaperMod 主题下代码高亮最佳实践</title>
       <link>https://jackcipher.github.io/posts/papermod-highlight/</link>
       <pubDate>Sat, 05 Mar 2022 21:20:01 +0800</pubDate>
       <guid>https://jackcipher.github.io/posts/papermod-highlight/</guid>
-      <description>背景 PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 Chroma 来生成代码高亮。 Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内</description>
+      <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
+&lt;p&gt;PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; 来生成代码高亮。&lt;/p&gt;
+&lt;p&gt;Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内置了 Chroma 工具。Hugo 关于 Chroma 的文档在 &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker 下 Filebeat 日志收集</title>
+      <link>https://jackcipher.github.io/posts/docker-filebeat/</link>
+      <pubDate>Sat, 05 Mar 2022 19:03:19 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/docker-filebeat/</guid>
+      <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;在收集服务端聊天消息日志时，用到了 Filebeat &lt;a href=&#34;https://www.elastic.co/guide/en/beats/filebeat/current/dissect.html&#34;&gt;dissect&lt;/a&gt; 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3&lt;/p&gt;
+&lt;p&gt;考虑到日志收集工作的普遍性，为了保持版本统一减少运维成本，特增加一种基于 Docker 实现的通用 Filebeat 日志收集方案。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
