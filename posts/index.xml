@@ -123,16 +123,37 @@
       <link>https://jackcipher.github.io/posts/tcpdump-in-action/</link>
       <pubDate>Tue, 30 Aug 2022 12:24:24 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/tcpdump-in-action/</guid>
-      <description>&lt;h3 id=&#34;redis-抓包&#34;&gt;Redis 抓包&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;tcpdump-抓包&#34;&gt;tcpdump 抓包&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo tcpdump -i eth0 tcp and port &lt;span class=&#34;m&#34;&gt;6379&lt;/span&gt; -n -nn -s0 -tttt -w redis.cap
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tcpdump -Xnlps0 -nn -iany port 9001 -w 9001.pcap
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;p&gt;参数说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-X&lt;/code&gt;: 显示包的内容（十六进制和 ASCII）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;: 不将地址转换为名字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-l&lt;/code&gt;: 使标准输出行缓冲&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-p&lt;/code&gt;: 不让网卡进入混杂模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-s0&lt;/code&gt;: 抓取完整的数据包&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-nn&lt;/code&gt;: 不将协议和端口转换为名字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-iany&lt;/code&gt;: 监听所有网络接口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-w&lt;/code&gt;: 将原始数据包写入文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;容器-debug&#34;&gt;容器 Debug&lt;/h2&gt;
+&lt;h3 id=&#34;kubectl-debug&#34;&gt;Kubectl Debug&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;kubectl&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;debug&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;it&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sentinel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;master&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ss&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;reg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;smvm&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cn&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;appbase&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;debug&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tools&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;latest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;target&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;redis&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;master&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这个命令会创建一个新的容器，共享目标容器的网络、PID 和 IPC 命名空间，方便进行调试。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go RPC 初探</title>
