@@ -107,7 +107,8 @@
       <pubDate>Wed, 20 Sep 2023 05:50:58 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
       <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
-&lt;p&gt;在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。&lt;/p&gt;</description>
+&lt;p&gt;过去，我一直在使用 x86_64 架构的 MacBook Pro 进行开发，服务器环境则是 x86_64 架构的 CentOS，因此从未担心过多架构的 Docker 镜像构建问题。&lt;/p&gt;
+&lt;p&gt;然而，公司最近更新了一批 M1 MacBook Pro。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus Relabel 总结</title>
