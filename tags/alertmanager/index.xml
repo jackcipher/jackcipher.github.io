@@ -6,12 +6,12 @@
     <description>Recent content in Alertmanager on Jack</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 14 Mar 2022 08:42:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Mar 2022 00:42:52 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/alertmanager/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alertmanager 中的周期参数</title>
       <link>https://jackcipher.github.io/posts/alertmanager-duration-args/</link>
-      <pubDate>Mon, 14 Mar 2022 08:42:52 +0800</pubDate>
+      <pubDate>Mon, 14 Mar 2022 00:42:52 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/alertmanager-duration-args/</guid>
       <description>&lt;p&gt;在 Alertmanager 中有三个跟周期相关的参数，分别是 group_wait, group_interval, repeat_interval。合理地配置参数，有利于降低告警频率，避免告警风暴产生。&lt;/p&gt;
 &lt;p&gt;在深入了解这三个参数之前，首先需要关注到 Prometheus 中也有两个周期函数，scrape_interval 与 evaluation_interval。&lt;/p&gt;</description>

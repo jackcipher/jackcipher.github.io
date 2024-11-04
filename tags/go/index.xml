@@ -6,12 +6,12 @@
     <description>Recent content in Go on Jack</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 01 Nov 2024 11:17:25 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2024 03:17:25 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GORM v1.25 错误处理机制的变化</title>
       <link>https://jackcipher.github.io/posts/gorm-v1.25/</link>
-      <pubDate>Fri, 01 Nov 2024 11:17:25 +0800</pubDate>
+      <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/gorm-v1.25/</guid>
       <description>&lt;h2 id=&#34;传统的错误处理方式&#34;&gt;传统的错误处理方式&lt;/h2&gt;
 &lt;p&gt;在 GORM 的使用过程中，&lt;code&gt;gorm.ErrNotFound&lt;/code&gt; 是最基础且使用最广泛的错误类型。作为开发者，我们习惯性地使用这种方式来处理查询未找到记录的情况：&lt;/p&gt;</description>
@@ -19,7 +19,7 @@
     <item>
       <title>构建跨平台 Go 服务</title>
       <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
-      <pubDate>Wed, 20 Sep 2023 13:50:58 +0800</pubDate>
+      <pubDate>Wed, 20 Sep 2023 05:50:58 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
       <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
 &lt;p&gt;在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。&lt;/p&gt;</description>
@@ -27,7 +27,7 @@
     <item>
       <title>Go RPC 初探</title>
       <link>https://jackcipher.github.io/posts/go-rpc/</link>
-      <pubDate>Tue, 19 Apr 2022 19:44:28 +0800</pubDate>
+      <pubDate>Tue, 19 Apr 2022 11:44:28 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/go-rpc/</guid>
       <description>&lt;h1 id=&#34;rpc-技术分享&#34;&gt;RPC 技术分享&lt;/h1&gt;
 &lt;h2 id=&#34;rpc-介绍&#34;&gt;RPC 介绍&lt;/h2&gt;
@@ -36,7 +36,7 @@
     <item>
       <title>Go 之 Delve 调试</title>
       <link>https://jackcipher.github.io/posts/go-delve/</link>
-      <pubDate>Sun, 20 Mar 2022 19:40:53 +0800</pubDate>
+      <pubDate>Sun, 20 Mar 2022 11:40:53 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/go-delve/</guid>
       <description>&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
 &lt;ol&gt;

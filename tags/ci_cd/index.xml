@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>CI/CD on Jack</title>
-    <link>https://jackcipher.github.io/tags/ci/cd/</link>
-    <description>Recent content in CI/CD on Jack</description>
+    <title>CI_CD on Jack</title>
+    <link>https://jackcipher.github.io/tags/ci_cd/</link>
+    <description>Recent content in CI_CD on Jack</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 04 Jan 2024 06:30:24 +0000</lastBuildDate>
-    <atom:link href="https://jackcipher.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jackcipher.github.io/tags/ci_cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitLab CI/CD 变量的用法</title>
       <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>

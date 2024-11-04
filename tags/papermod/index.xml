@@ -6,12 +6,12 @@
     <description>Recent content in PaperMod on Jack</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 05 Mar 2022 21:20:01 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 05 Mar 2022 13:20:01 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PaperMod 主题下代码高亮最佳实践</title>
       <link>https://jackcipher.github.io/posts/papermod-highlight/</link>
-      <pubDate>Sat, 05 Mar 2022 21:20:01 +0800</pubDate>
+      <pubDate>Sat, 05 Mar 2022 13:20:01 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/papermod-highlight/</guid>
       <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
 &lt;p&gt;PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; 来生成代码高亮。&lt;/p&gt;
