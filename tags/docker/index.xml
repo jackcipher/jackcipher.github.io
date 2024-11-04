@@ -17,15 +17,6 @@
 &lt;p&gt;在过去，我的开发主机一直都是 x86_64 架构的 MacBook Pro，而我的服务器的环境也是 x86_64 架构的 CentOS。在这之前，我一直不用为支持多架构 Docker 镜像构建而烦恼。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Docker 使用的一些总结</title>
-      <link>https://jackcipher.github.io/posts/docker-review/</link>
-      <pubDate>Mon, 09 Jan 2023 10:19:58 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/docker-review/</guid>
-      <description>&lt;h2 id=&#34;悬挂镜像&#34;&gt;悬挂镜像&lt;/h2&gt;
-&lt;p&gt;sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。&lt;/p&gt;
-&lt;p&gt;在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 &lt;none&gt; 的镜像。经过查阅资料发现，这些镜像称为悬挂镜像(dangling image)。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Docker 下 Filebeat 日志收集</title>
       <link>https://jackcipher.github.io/posts/docker-filebeat/</link>
       <pubDate>Sat, 05 Mar 2022 11:03:19 +0000</pubDate>
