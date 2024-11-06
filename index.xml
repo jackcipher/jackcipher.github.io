@@ -147,6 +147,15 @@
 &lt;p&gt;然而，公司最近更新了一批 M1 MacBook Pro。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Docker 使用的一些总结</title>
+      <link>https://jackcipher.github.io/posts/docker-review/</link>
+      <pubDate>Mon, 09 Jan 2023 10:19:58 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/docker-review/</guid>
+      <description>&lt;h2 id=&#34;悬挂镜像&#34;&gt;悬挂镜像&lt;/h2&gt;
+&lt;p&gt;sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。&lt;/p&gt;
+&lt;p&gt;在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 &lt;none&gt; 的镜像。经过查阅资料发现，这些镜像称为悬挂镜像(dangling image)。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Prometheus Relabel 总结</title>
       <link>https://jackcipher.github.io/posts/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 09:13:47 +0000</pubDate>
@@ -486,15 +495,6 @@ consonant: [ət|]&lt;/p&gt;</description>
       <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
 &lt;p&gt;在收集服务端聊天消息日志时，用到了 Filebeat &lt;a href=&#34;https://www.elastic.co/guide/en/beats/filebeat/current/dissect.html&#34;&gt;dissect&lt;/a&gt; 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3&lt;/p&gt;
 &lt;p&gt;考虑到日志收集工作的普遍性，为了保持版本统一减少运维成本，特增加一种基于 Docker 实现的通用 Filebeat 日志收集方案。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Docker 常见问题小结</title>
-      <link>https://jackcipher.github.io/posts/docker-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/docker-review/</guid>
-      <description>&lt;h2 id=&#34;悬挂镜像&#34;&gt;悬挂镜像&lt;/h2&gt;
-&lt;p&gt;sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。&lt;/p&gt;
-&lt;p&gt;在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 &lt;none&gt; 的镜像。经过查阅资料发现，这些镜像称为悬挂镜像(dangling image)。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
