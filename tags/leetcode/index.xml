@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>LeetCode on Jack</title>
+    <title>Leetcode on Jack</title>
     <link>https://jackcipher.github.io/tags/leetcode/</link>
-    <description>Recent content in LeetCode on Jack</description>
+    <description>Recent content in Leetcode on Jack</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2025 20:58:00 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GORM v1.25 错误处理机制的变化</title>
+      <link>https://jackcipher.github.io/posts/leetcode-sum-topic/</link>
+      <pubDate>Sat, 01 Feb 2025 20:58:00 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/leetcode-sum-topic/</guid>
+      <description>&lt;h1 id=&#34;leetcode-经典问题数组求和系列详解与分析&#34;&gt;LeetCode 经典问题：数组求和系列详解与分析&lt;/h1&gt;
+&lt;p&gt;数组求和问题是算法面试中的经典题型，本文将从基础到进阶，系统地分析 2Sum、3Sum、3Sum Closest 和 4Sum 的解题思路、代码实现及优化方案。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Brian Kernighan 求解 set bit 个数</title>
       <link>https://jackcipher.github.io/leetcode/brian-kernighan/</link>
@@ -34,6 +42,14 @@
       <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。&lt;/p&gt;
 &lt;p&gt;我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针，分别称为快指针和慢指针。慢指针每次走一步，快指针每次走两步。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GORM v1.25 错误处理机制的变化</title>
+      <link>https://jackcipher.github.io/posts/leetcode-bisection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/leetcode-bisection/</guid>
+      <description>&lt;h1 id=&#34;二分查找的通用模型与常见错误&#34;&gt;二分查找的通用模型与常见错误&lt;/h1&gt;
+&lt;p&gt;在算法面试中，&lt;strong&gt;二分查找（Binary Search）&lt;/strong&gt; 是一个非常重要的知识点。许多人在实际应用时会遇到边界处理的问题，导致程序出现 bug。本文将总结二分查找的通用模型，并分析常见错误。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
