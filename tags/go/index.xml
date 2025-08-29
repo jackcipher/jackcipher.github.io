@@ -4,7 +4,7 @@
     <title>Go on Jack</title>
     <link>https://jackcipher.github.io/tags/go/</link>
     <description>Recent content in Go on Jack</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.149.0</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 05 Feb 2025 14:27:00 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
@@ -124,8 +124,7 @@
 &lt;ol&gt;
 &lt;li&gt;编译的时候需要禁用编译器优化：&lt;code&gt;go build -gcflags=&amp;quot;-N -l&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;编译选项有哪些：&lt;code&gt;go tool compile -h&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;调试正在运行的进程&#34;&gt;调试正在运行的进程&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

@@ -4,10 +4,19 @@
     <title>Jack</title>
     <link>https://jackcipher.github.io/</link>
     <description>Recent content on Jack</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.149.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 05 Feb 2025 14:27:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Aug 2025 11:01:58 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何通过 mitmproxy 激活 Shottr</title>
+      <link>https://jackcipher.github.io/posts/how-to-crack-shottr/</link>
+      <pubDate>Fri, 29 Aug 2025 11:01:58 +0800</pubDate>
+      <guid>https://jackcipher.github.io/posts/how-to-crack-shottr/</guid>
+      <description>&lt;p&gt;Shottr 是一款功能强大的 macOS 截图软件，虽然基础功能免费，但许多实用的高级功能（如 backdrop 背景虚化等）需要付费使用。&lt;/p&gt;
+&lt;h3 id=&#34;激活原理&#34;&gt;激活原理&lt;/h3&gt;
+&lt;p&gt;通过 Charles 抓包发现，每当在 Shottr 里的 &amp;ldquo;License&amp;rdquo; 界面进行激活时，App 都会向 &lt;code&gt;shottr.cc&lt;/code&gt; 发送一个 POST 请求来验证激活码的有效性。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>二分查找的通用模型与常见错误</title>
       <link>https://jackcipher.github.io/posts/leetcode-bisection/</link>
@@ -259,8 +268,7 @@
 &lt;li&gt;值为 0 的称为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如下图所示，上面的部分为 &lt;code&gt;set bit&lt;/code&gt;，下面的为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;按位与操作&#34;&gt;按位与操作(&amp;amp;)&lt;/h3&gt;
 &lt;p&gt;按位与操作：bitwise AND operator&lt;/p&gt;</description>
     </item>
@@ -279,8 +287,7 @@
       <pubDate>Sat, 13 Jan 2024 06:16:35 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/standards-for-documentation/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;转载于公司技术委员会&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;转载于公司技术委员会&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;markdown&#34;&gt;Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -642,8 +649,7 @@ consonant: [ət|]&lt;/p&gt;</description>
 &lt;ol&gt;
 &lt;li&gt;编译的时候需要禁用编译器优化：&lt;code&gt;go build -gcflags=&amp;quot;-N -l&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;编译选项有哪些：&lt;code&gt;go tool compile -h&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
 &lt;h4 id=&#34;调试正在运行的进程&#34;&gt;调试正在运行的进程&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

@@ -4,7 +4,7 @@
     <title>Leetcodes on Jack</title>
     <link>https://jackcipher.github.io/leetcode/</link>
     <description>Recent content in Leetcodes on Jack</description>
-    <generator>Hugo -- 0.136.5</generator>
+    <generator>Hugo -- 0.149.0</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 14 Jan 2024 16:36:44 +0800</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/leetcode/index.xml" rel="self" type="application/rss+xml" />
@@ -21,8 +21,7 @@
 &lt;li&gt;值为 0 的称为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;如下图所示，上面的部分为 &lt;code&gt;set bit&lt;/code&gt;，下面的为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;按位与操作&#34;&gt;按位与操作(&amp;amp;)&lt;/h3&gt;
 &lt;p&gt;按位与操作：bitwise AND operator&lt;/p&gt;</description>
     </item>
