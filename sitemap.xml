@@ -2,11 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jackcipher.github.io/categories/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/</loc>
-    <lastmod>2025-08-29T11:01:58+08:00</lastmod>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/mermaid/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/obsidian/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/</loc>
-    <lastmod>2025-08-29T11:01:58+08:00</lastmod>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/how-to-crack-shottr/</loc>
     <lastmod>2025-08-29T11:01:58+08:00</lastmod>
@@ -15,9 +39,6 @@
     <lastmod>2025-02-05T14:27:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/leetcode/</loc>
-    <lastmod>2025-02-05T14:27:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/tags/</loc>
     <lastmod>2025-02-05T14:27:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/leetcode-bisection/</loc>
@@ -138,8 +159,6 @@
     <lastmod>2022-03-05T11:03:19+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/archives/</loc>
-  </url><url>
-    <loc>https://jackcipher.github.io/categories/</loc>
   </url><url>
     <loc>https://jackcipher.github.io/posts/docker-review/</loc>
   </url><url>
