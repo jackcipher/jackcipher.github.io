@@ -247,6 +247,13 @@
 &lt;/div&gt;</description>
     </item>
     <item>
+      <title>Go errors.Is 失效问题的本质剖析</title>
+      <link>https://jackcipher.github.io/posts/go-error-handling-value-semantics/</link>
+      <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/go-error-handling-value-semantics/</guid>
+      <description>深入分析 Go 语言中 errors.Is 匹配失败的根本原因,探讨值类型与接口交互时的类型语义陷阱,以及 errors.As 的正确使用方式</description>
+    </item>
+    <item>
       <title>GORM Hook 使用误区</title>
       <link>https://jackcipher.github.io/posts/gorm-hook/</link>
       <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
