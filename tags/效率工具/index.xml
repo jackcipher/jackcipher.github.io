@@ -15,5 +15,14 @@
       <guid>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</guid>
       <description>很多人以为在 Obsidian 中调整 Mermaid 样式需要复杂的 CSS 或第三方插件，其实原生语法里隐藏了一个强大的配置指令...</description>
     </item>
+    <item>
+      <title>如何通过 mitmproxy 激活 Shottr</title>
+      <link>https://jackcipher.github.io/posts/how-to-crack-shottr/</link>
+      <pubDate>Fri, 29 Aug 2025 11:01:58 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/how-to-crack-shottr/</guid>
+      <description>&lt;p&gt;Shottr 是一款功能强大的 macOS 截图软件，虽然基础功能免费，但许多实用的高级功能（如 backdrop 背景虚化等）需要付费使用。&lt;/p&gt;
+&lt;h3 id=&#34;激活原理&#34;&gt;激活原理&lt;/h3&gt;
+&lt;p&gt;通过 Charles 抓包发现，每当在 Shottr 里的 &amp;ldquo;License&amp;rdquo; 界面进行激活时，App 都会向 &lt;code&gt;shottr.cc&lt;/code&gt; 发送一个 POST 请求来验证激活码的有效性。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
