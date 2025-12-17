@@ -6,8 +6,15 @@
     <description>Recent content on Jack</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 20:36:05 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go 的 SSE 实时日志方案</title>
+      <link>https://jackcipher.github.io/posts/sse-log-stream/</link>
+      <pubDate>Wed, 17 Dec 2025 20:36:05 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/sse-log-stream/</guid>
+      <description>&lt;p&gt;在构建后台管理系统或运维平台时，“实时日志查看”是一个非常高频的需求。传统的做法往往是前端通过 &lt;code&gt;setInterval&lt;/code&gt; 每隔几秒轮询一次接口，这种方式不仅时效性差，而且对服务器造成了大量无效请求。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Obsidian 中 Mermaid 的原生主题定制方案</title>
       <link>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</link>
