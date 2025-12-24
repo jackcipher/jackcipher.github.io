@@ -25,21 +25,12 @@
 &lt;p&gt;数组求和问题是算法面试中的经典题型，本文将从基础到进阶，系统地分析 2Sum、3Sum、3Sum Closest 和 4Sum 的解题思路、代码实现及优化方案。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Brian Kernighan 求解 set bit 个数</title>
+      <title>位操作之 Kernighan&#39;s Algorithm</title>
       <link>https://jackcipher.github.io/leetcode/brian-kernighan/</link>
       <pubDate>Sun, 14 Jan 2024 16:36:44 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/brian-kernighan/</guid>
-      <description>&lt;h2 id=&#34;基础知识&#34;&gt;基础知识&lt;/h2&gt;
-&lt;h3 id=&#34;位的命名&#34;&gt;位的命名&lt;/h3&gt;
-&lt;p&gt;二进制位由 0 与 1 组成, 把不同的位分别定义如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;把值为 1 的位称为 &lt;code&gt;set bit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;值为 0 的称为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;如下图所示，上面的部分为 &lt;code&gt;set bit&lt;/code&gt;，下面的为 &lt;code&gt;unset bit&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;按位与操作&#34;&gt;按位与操作(&amp;amp;)&lt;/h3&gt;
-&lt;p&gt;按位与操作：bitwise AND operator&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;位操作 (Bit Manipulation)&lt;/strong&gt; 往往能通过令人惊叹的技巧带来性能的极致提升。其中，计算一个整数二进制表示中 &lt;code&gt;1&lt;/code&gt; 的个数（即 &lt;strong&gt;Population Count&lt;/strong&gt; 或 &lt;strong&gt;Hamming Weight&lt;/strong&gt;）是一个非常经典的问题。&lt;/p&gt;
+&lt;p&gt;最朴素的解法是循环检查每一位（Loop &amp;amp; Shift），其时间复杂度固定为 $O(n)$。然而，&lt;strong&gt;Kernighan&amp;rsquo;s Algorithm&lt;/strong&gt; 提供了一种更为优雅且高效的思路，将时间复杂度优化至 &lt;strong&gt;$O(k)$&lt;/strong&gt;（$k$ 为 set bit 的个数）：&lt;strong&gt;跳过所有的 &lt;code&gt;0&lt;/code&gt;，只处理 &lt;code&gt;1&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Coin Change</title>
