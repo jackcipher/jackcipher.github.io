@@ -33,17 +33,17 @@
     </item>
     <item>
       <title>二分查找的通用模型与常见错误</title>
-      <link>https://jackcipher.github.io/posts/leetcode-bisection/</link>
+      <link>https://jackcipher.github.io/leetcode/leetcode-bisection/</link>
       <pubDate>Wed, 05 Feb 2025 14:27:00 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/leetcode-bisection/</guid>
+      <guid>https://jackcipher.github.io/leetcode/leetcode-bisection/</guid>
       <description>&lt;h1 id=&#34;二分查找的通用模型与常见错误&#34;&gt;二分查找的通用模型与常见错误&lt;/h1&gt;
 &lt;p&gt;在算法面试中，&lt;strong&gt;二分查找（Binary Search）&lt;/strong&gt; 是一个非常重要的知识点。许多人在实际应用时会遇到边界处理的问题，导致程序出现 bug。本文将总结二分查找的通用模型，并分析常见错误。&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 经典问题：数组求和系列详解与分析</title>
-      <link>https://jackcipher.github.io/posts/leetcode-sum-topic/</link>
+      <link>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</link>
       <pubDate>Sat, 01 Feb 2025 20:58:00 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/leetcode-sum-topic/</guid>
+      <guid>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</guid>
       <description>&lt;h1 id=&#34;leetcode-经典问题数组求和系列详解与分析&#34;&gt;LeetCode 经典问题：数组求和系列详解与分析&lt;/h1&gt;
 &lt;p&gt;数组求和问题是算法面试中的经典题型，本文将从基础到进阶，系统地分析 2Sum、3Sum、3Sum Closest 和 4Sum 的解题思路、代码实现及优化方案。&lt;/p&gt;</description>
     </item>
@@ -752,6 +752,13 @@ consonant: [ət|]&lt;/p&gt;</description>
       <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
 &lt;p&gt;在收集服务端聊天消息日志时，用到了 Filebeat &lt;a href=&#34;https://www.elastic.co/guide/en/beats/filebeat/current/dissect.html&#34;&gt;dissect&lt;/a&gt; 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3&lt;/p&gt;
 &lt;p&gt;考虑到日志收集工作的普遍性，为了保持版本统一减少运维成本，特增加一种基于 Docker 实现的通用 Filebeat 日志收集方案。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://jackcipher.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jackcipher.github.io/about/</guid>
+      <description>about</description>
     </item>
   </channel>
 </rss>

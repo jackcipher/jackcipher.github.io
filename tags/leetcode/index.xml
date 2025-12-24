@@ -10,17 +10,17 @@
     <atom:link href="https://jackcipher.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>二分查找的通用模型与常见错误</title>
-      <link>https://jackcipher.github.io/posts/leetcode-bisection/</link>
+      <link>https://jackcipher.github.io/leetcode/leetcode-bisection/</link>
       <pubDate>Wed, 05 Feb 2025 14:27:00 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/leetcode-bisection/</guid>
+      <guid>https://jackcipher.github.io/leetcode/leetcode-bisection/</guid>
       <description>&lt;h1 id=&#34;二分查找的通用模型与常见错误&#34;&gt;二分查找的通用模型与常见错误&lt;/h1&gt;
 &lt;p&gt;在算法面试中，&lt;strong&gt;二分查找（Binary Search）&lt;/strong&gt; 是一个非常重要的知识点。许多人在实际应用时会遇到边界处理的问题，导致程序出现 bug。本文将总结二分查找的通用模型，并分析常见错误。&lt;/p&gt;</description>
     </item>
     <item>
       <title>LeetCode 经典问题：数组求和系列详解与分析</title>
-      <link>https://jackcipher.github.io/posts/leetcode-sum-topic/</link>
+      <link>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</link>
       <pubDate>Sat, 01 Feb 2025 20:58:00 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/leetcode-sum-topic/</guid>
+      <guid>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</guid>
       <description>&lt;h1 id=&#34;leetcode-经典问题数组求和系列详解与分析&#34;&gt;LeetCode 经典问题：数组求和系列详解与分析&lt;/h1&gt;
 &lt;p&gt;数组求和问题是算法面试中的经典题型，本文将从基础到进阶，系统地分析 2Sum、3Sum、3Sum Closest 和 4Sum 的解题思路、代码实现及优化方案。&lt;/p&gt;</description>
     </item>
@@ -40,6 +40,15 @@
 &lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://cdn.jsdelivr.net/gh/jackcipher/static_resource@master/imgs/obsidian202401141637842.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;按位与操作&#34;&gt;按位与操作(&amp;amp;)&lt;/h3&gt;
 &lt;p&gt;按位与操作：bitwise AND operator&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Coin Change</title>
+      <link>https://jackcipher.github.io/leetcode/coin-change/</link>
+      <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
+      <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
+      <description>&lt;h2 id=&#34;coin-change-ii&#34;&gt;Coin Change II&lt;/h2&gt;
+&lt;p&gt;In the &amp;ldquo;Coin Change II&amp;rdquo; problem, we are given coins of various denominations and a specific amount. Our task is to determine the number of different ways we can make up that amount using the coins. Unlike other coin change problems where we need to minimize or maximize the number of coins, here we need to find the total number of possible combinations.&lt;/p&gt;
+&lt;p&gt;For instance, with coins [1,2,5] and amount 5, we have the following combinations:&lt;/p&gt;</description>
     </item>
     <item>
       <title>一文看懂快慢指针解法</title>
