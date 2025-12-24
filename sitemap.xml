@@ -8,13 +8,13 @@
     <loc>https://jackcipher.github.io/series/go-in-action/</loc>
     <lastmod>2025-12-17T20:36:05+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/sse-log-stream/</loc>
+    <loc>https://jackcipher.github.io/go-in-action/sse-log-stream/</loc>
+    <lastmod>2025-12-17T20:36:05+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/go-in-action/</loc>
     <lastmod>2025-12-17T20:36:05+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/</loc>
-    <lastmod>2025-12-17T20:36:05+00:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/posts/</loc>
     <lastmod>2025-12-17T20:36:05+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/series/</loc>
@@ -30,6 +30,9 @@
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/</loc>
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
@@ -56,34 +59,34 @@
     <loc>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</loc>
     <lastmod>2025-02-01T20:58:00+00:00</lastmod>
   </url><url>
+    <loc>https://jackcipher.github.io/radio/</loc>
+    <lastmod>2024-11-11T19:20:00+00:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/tags/%E6%97%A0%E7%BA%BF%E7%94%B5/</loc>
     <lastmod>2024-11-11T19:20:00+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/radio-frequency-exam/</loc>
+    <loc>https://jackcipher.github.io/radio/radio-frequency-exam/</loc>
     <lastmod>2024-11-11T19:20:00+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/go-error-handling-value-semantics/</loc>
+    <loc>https://jackcipher.github.io/go-in-action/go-error-handling-value-semantics/</loc>
     <lastmod>2024-11-01T03:17:25+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/gorm/</loc>
     <lastmod>2024-11-01T03:17:25+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/gorm-hook/</loc>
+    <loc>https://jackcipher.github.io/go-in-action/gorm-hook/</loc>
     <lastmod>2024-11-01T03:17:25+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/gorm-v1.25/</loc>
+    <loc>https://jackcipher.github.io/go-in-action/gorm-v1.25/</loc>
     <lastmod>2024-11-01T03:17:25+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/tags/pr/</loc>
-    <lastmod>2024-11-01T03:17:25+00:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/tags/bitmanipulation/</loc>
+    <loc>https://jackcipher.github.io/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2024-01-14T16:36:44+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/leetcode/brian-kernighan/</loc>
     <lastmod>2024-01-14T16:36:44+08:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/tags/dynamicprogramming/</loc>
+    <loc>https://jackcipher.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
     <lastmod>2024-01-14T00:15:50+08:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/leetcode/coin-change/</loc>
@@ -92,37 +95,46 @@
     <loc>https://jackcipher.github.io/posts/standards-for-documentation/</loc>
     <lastmod>2024-01-13T06:16:35+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/tags/twopointers/</loc>
-    <lastmod>2024-01-12T06:31:03+00:00</lastmod>
-  </url><url>
     <loc>https://jackcipher.github.io/leetcode/fast-slow-pointer/</loc>
     <lastmod>2024-01-12T06:31:03+00:00</lastmod>
   </url><url>
+    <loc>https://jackcipher.github.io/tags/%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
+    <lastmod>2024-01-12T06:31:03+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/promethues/</loc>
+    <lastmod>2024-01-11T13:56:48+00:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/tags/ci-cd/</loc>
+    <lastmod>2024-01-04T06:30:24+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/devops/</loc>
+    <lastmod>2024-01-04T06:30:24+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/series/devops/</loc>
     <lastmod>2024-01-04T06:30:24+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/gitlab/</loc>
     <lastmod>2024-01-04T06:30:24+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/gitlab-ci-variable/</loc>
+    <loc>https://jackcipher.github.io/devops/gitlab-ci-variable/</loc>
     <lastmod>2024-01-04T06:30:24+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/docker/</loc>
     <lastmod>2023-09-20T05:50:58+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/build-multiarch-go/</loc>
+    <loc>https://jackcipher.github.io/devops/build-multiarch-go/</loc>
     <lastmod>2023-09-20T05:50:58+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/docker-review/</loc>
+    <loc>https://jackcipher.github.io/devops/docker-review/</loc>
     <lastmod>2023-01-09T10:19:58+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/tags/prometehus/</loc>
+    <loc>https://jackcipher.github.io/tags/prometheus/</loc>
     <lastmod>2022-09-17T09:13:47+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/prom_relabel/</loc>
+    <loc>https://jackcipher.github.io/promethues/prom_relabel/</loc>
     <lastmod>2022-09-17T09:13:47+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/tcpdump-in-action/</loc>
+    <loc>https://jackcipher.github.io/devops/tcpdump-in-action/</loc>
     <lastmod>2022-08-30T12:24:24+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/oral/contraction/</loc>
@@ -140,31 +152,28 @@
     <loc>https://jackcipher.github.io/oral/phrase-in-common/</loc>
     <lastmod>2022-07-16T14:20:10+08:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/go-rpc/</loc>
+    <loc>https://jackcipher.github.io/go-in-action/go-rpc/</loc>
     <lastmod>2022-04-19T11:44:28+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/tags/prometheus/</loc>
+    <loc>https://jackcipher.github.io/promethues/prometheus-retention/</loc>
     <lastmod>2022-03-24T02:12:22+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/prometheus-retention/</loc>
-    <lastmod>2022-03-24T02:12:22+00:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/posts/go-delve/</loc>
+    <loc>https://jackcipher.github.io/go-in-action/go-delve/</loc>
     <lastmod>2022-03-20T11:40:53+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/alertmanager/</loc>
     <lastmod>2022-03-14T00:42:52+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/alertmanager-duration-args/</loc>
+    <loc>https://jackcipher.github.io/promethues/alertmanager-duration-args/</loc>
     <lastmod>2022-03-14T00:42:52+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/prom_with_auth/</loc>
+    <loc>https://jackcipher.github.io/promethues/prom_with_auth/</loc>
     <lastmod>2022-03-12T08:22:20+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/kubernetes/</loc>
     <lastmod>2022-03-10T15:01:08+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/service-account/</loc>
+    <loc>https://jackcipher.github.io/devops/service-account/</loc>
     <lastmod>2022-03-10T15:01:08+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/hugo/</loc>
@@ -176,7 +185,7 @@
     <loc>https://jackcipher.github.io/posts/papermod-highlight/</loc>
     <lastmod>2022-03-05T13:20:01+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/posts/docker-filebeat/</loc>
+    <loc>https://jackcipher.github.io/devops/docker-filebeat/</loc>
     <lastmod>2022-03-05T11:03:19+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/filebeat/</loc>

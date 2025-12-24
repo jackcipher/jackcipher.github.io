@@ -32,7 +32,7 @@
 &lt;p&gt;最朴素的解法是循环检查每一位（Loop &amp;amp; Shift），其时间复杂度固定为 $O(n)$。然而，&lt;strong&gt;Kernighan&amp;rsquo;s Algorithm&lt;/strong&gt; 提供了一种更为优雅且高效的思路，将时间复杂度优化至 &lt;strong&gt;$O(k)$&lt;/strong&gt;（$k$ 为 set bit 的个数）：&lt;strong&gt;跳过所有的 &lt;code&gt;0&lt;/code&gt;，只处理 &lt;code&gt;1&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>组合总和 IV：零钱兑换 II (Coin Change 2)</title>
+      <title>零钱兑换 II (Coin Change 2)</title>
       <link>https://jackcipher.github.io/leetcode/coin-change/</link>
       <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>

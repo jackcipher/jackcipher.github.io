@@ -10,9 +10,9 @@
     <atom:link href="https://jackcipher.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go 的 SSE 实时日志方案</title>
-      <link>https://jackcipher.github.io/posts/sse-log-stream/</link>
+      <link>https://jackcipher.github.io/go-in-action/sse-log-stream/</link>
       <pubDate>Wed, 17 Dec 2025 20:36:05 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/sse-log-stream/</guid>
+      <guid>https://jackcipher.github.io/go-in-action/sse-log-stream/</guid>
       <description>&lt;p&gt;在构建后台管理系统或运维平台时，“实时日志查看”是一个非常高频的需求。传统的做法往往是前端通过 &lt;code&gt;setInterval&lt;/code&gt; 每隔几秒轮询一次接口，这种方式不仅时效性差，而且对服务器造成了大量无效请求。&lt;/p&gt;</description>
     </item>
     <item>
@@ -48,9 +48,9 @@
     </item>
     <item>
       <title>无线电考试中频率相关的考题</title>
-      <link>https://jackcipher.github.io/posts/radio-frequency-exam/</link>
+      <link>https://jackcipher.github.io/radio/radio-frequency-exam/</link>
       <pubDate>Mon, 11 Nov 2024 19:20:00 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/radio-frequency-exam/</guid>
+      <guid>https://jackcipher.github.io/radio/radio-frequency-exam/</guid>
       <description>&lt;h2 id=&#34;与频率相关的考题&#34;&gt;与频率相关的考题&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -254,24 +254,24 @@
     </item>
     <item>
       <title>Go errors.Is 失效问题的本质剖析</title>
-      <link>https://jackcipher.github.io/posts/go-error-handling-value-semantics/</link>
+      <link>https://jackcipher.github.io/go-in-action/go-error-handling-value-semantics/</link>
       <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/go-error-handling-value-semantics/</guid>
+      <guid>https://jackcipher.github.io/go-in-action/go-error-handling-value-semantics/</guid>
       <description>深入分析 Go 语言中 errors.Is 匹配失败的根本原因,探讨值类型与接口交互时的类型语义陷阱,以及 errors.As 的正确使用方式</description>
     </item>
     <item>
       <title>GORM Hook 使用误区</title>
-      <link>https://jackcipher.github.io/posts/gorm-hook/</link>
+      <link>https://jackcipher.github.io/go-in-action/gorm-hook/</link>
       <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/gorm-hook/</guid>
+      <guid>https://jackcipher.github.io/go-in-action/gorm-hook/</guid>
       <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;在 office-gateway 三期优化过程中，对任务数据实现了缓存机制，旨在提高查询性能。考虑到数据写操作频繁，且当前仅有一个接口负责读取，属于典型的写多读少场景。于是决定选用 GORM 的 Hook 机制来更新缓存。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GORM v1.25 错误处理机制的变化</title>
-      <link>https://jackcipher.github.io/posts/gorm-v1.25/</link>
+      <link>https://jackcipher.github.io/go-in-action/gorm-v1.25/</link>
       <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/gorm-v1.25/</guid>
+      <guid>https://jackcipher.github.io/go-in-action/gorm-v1.25/</guid>
       <description>&lt;h2 id=&#34;传统的错误处理方式&#34;&gt;传统的错误处理方式&lt;/h2&gt;
 &lt;p&gt;在 GORM 的使用过程中，&lt;code&gt;gorm.ErrNotFound&lt;/code&gt; 是最基础且使用最广泛的错误类型。作为开发者，我们习惯性地使用这种方式来处理查询未找到记录的情况：&lt;/p&gt;</description>
     </item>
@@ -284,7 +284,7 @@
 &lt;p&gt;最朴素的解法是循环检查每一位（Loop &amp;amp; Shift），其时间复杂度固定为 $O(n)$。然而，&lt;strong&gt;Kernighan&amp;rsquo;s Algorithm&lt;/strong&gt; 提供了一种更为优雅且高效的思路，将时间复杂度优化至 &lt;strong&gt;$O(k)$&lt;/strong&gt;（$k$ 为 set bit 的个数）：&lt;strong&gt;跳过所有的 &lt;code&gt;0&lt;/code&gt;，只处理 &lt;code&gt;1&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>组合总和 IV：零钱兑换 II (Coin Change 2)</title>
+      <title>零钱兑换 II (Coin Change 2)</title>
       <link>https://jackcipher.github.io/leetcode/coin-change/</link>
       <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
@@ -354,9 +354,9 @@
     </item>
     <item>
       <title>GitLab CI/CD 变量的用法</title>
-      <link>https://jackcipher.github.io/posts/gitlab-ci-variable/</link>
+      <link>https://jackcipher.github.io/devops/gitlab-ci-variable/</link>
       <pubDate>Thu, 04 Jan 2024 06:30:24 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/gitlab-ci-variable/</guid>
+      <guid>https://jackcipher.github.io/devops/gitlab-ci-variable/</guid>
       <description>&lt;p&gt;CI/CD 变量是环境变量的一种，通过设置 CI/CD 变量可以：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -383,36 +383,36 @@
     </item>
     <item>
       <title>构建跨平台 Go 服务</title>
-      <link>https://jackcipher.github.io/posts/build-multiarch-go/</link>
+      <link>https://jackcipher.github.io/devops/build-multiarch-go/</link>
       <pubDate>Wed, 20 Sep 2023 05:50:58 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/build-multiarch-go/</guid>
+      <guid>https://jackcipher.github.io/devops/build-multiarch-go/</guid>
       <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
 &lt;p&gt;过去，我一直在使用 x86_64 架构的 MacBook Pro 进行开发，服务器环境则是 x86_64 架构的 CentOS，因此从未担心过多架构的 Docker 镜像构建问题。&lt;/p&gt;
 &lt;p&gt;然而，公司最近更新了一批 M1 MacBook Pro。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker 使用的一些总结</title>
-      <link>https://jackcipher.github.io/posts/docker-review/</link>
+      <link>https://jackcipher.github.io/devops/docker-review/</link>
       <pubDate>Mon, 09 Jan 2023 10:19:58 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/docker-review/</guid>
+      <guid>https://jackcipher.github.io/devops/docker-review/</guid>
       <description>&lt;h2 id=&#34;悬挂镜像&#34;&gt;悬挂镜像&lt;/h2&gt;
 &lt;p&gt;sonarnotify 在 CI/CD 中用到了 Docker 多阶段构建。&lt;/p&gt;
 &lt;p&gt;在构建完成后，即使每次都删掉了构建后的镜像，通过 docker images 还是能发现一些标签为 &lt;none&gt; 的镜像。经过查阅资料发现，这些镜像称为悬挂镜像(dangling image)。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus Relabel 总结</title>
-      <link>https://jackcipher.github.io/posts/prom_relabel/</link>
+      <link>https://jackcipher.github.io/promethues/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 09:13:47 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/prom_relabel/</guid>
+      <guid>https://jackcipher.github.io/promethues/prom_relabel/</guid>
       <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;在官方文档中，关于 &lt;code&gt;relabel&lt;/code&gt; 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。&lt;/p&gt;
 &lt;p&gt;本文将结合实际使用经验，将 &lt;code&gt;relabel&lt;/code&gt; 的使用场景做一个总结。&lt;/p&gt;</description>
     </item>
     <item>
       <title>容器抓包实战</title>
-      <link>https://jackcipher.github.io/posts/tcpdump-in-action/</link>
+      <link>https://jackcipher.github.io/devops/tcpdump-in-action/</link>
       <pubDate>Tue, 30 Aug 2022 12:24:24 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/tcpdump-in-action/</guid>
+      <guid>https://jackcipher.github.io/devops/tcpdump-in-action/</guid>
       <description>&lt;h2 id=&#34;tcpdump-抓包&#34;&gt;tcpdump 抓包&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -584,26 +584,26 @@ consonant: [ət|]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go RPC 初探</title>
-      <link>https://jackcipher.github.io/posts/go-rpc/</link>
+      <link>https://jackcipher.github.io/go-in-action/go-rpc/</link>
       <pubDate>Tue, 19 Apr 2022 11:44:28 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/go-rpc/</guid>
+      <guid>https://jackcipher.github.io/go-in-action/go-rpc/</guid>
       <description>&lt;h1 id=&#34;rpc-技术分享&#34;&gt;RPC 技术分享&lt;/h1&gt;
 &lt;h2 id=&#34;rpc-介绍&#34;&gt;RPC 介绍&lt;/h2&gt;
 &lt;p&gt;远程过程调用(Remote Procedure Call 缩写 RPC)是一个计算机通信协议,通俗来讲就是调用远程服务上的一个函数，在调用时将对象名、函数名、参数等传递给远程服务器，服务器将处理结果返回给客户端，客户端调用 server 端提供的接口就像是调用本地的函数一样。 RPC 的消息可以通过 TCP、UDP 或者 HTTP 等传输。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus 数据保留时间</title>
-      <link>https://jackcipher.github.io/posts/prometheus-retention/</link>
+      <link>https://jackcipher.github.io/promethues/prometheus-retention/</link>
       <pubDate>Thu, 24 Mar 2022 02:12:22 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/prometheus-retention/</guid>
+      <guid>https://jackcipher.github.io/promethues/prometheus-retention/</guid>
       <description>&lt;p&gt;如何控制 Prometheus 保留多少历史记录？&lt;/p&gt;
 &lt;p&gt;Prometheus 将时间序列及其样本存储在磁盘上。鉴于磁盘空间是一种有限资源，我们希望对 Prometheus 使用的磁盘空间进行一些限制。在以前的版本中，使用 &lt;code&gt;--storage.tsdb.retention&lt;/code&gt; 参数即可完成配置。这个参数指定 Prometheus 将保持可用的时间范围。这是最低要求，因此如果其中一些仍在保留窗口内，它将保留整个块。如果您知道每秒样本的摄取率，那么您可以将其乘以每个样本的字节数（1.5ish，为了安全起见为 2）和保留时间，以了解将使用多少磁盘空间。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Go 之 Delve 调试</title>
-      <link>https://jackcipher.github.io/posts/go-delve/</link>
+      <link>https://jackcipher.github.io/go-in-action/go-delve/</link>
       <pubDate>Sun, 20 Mar 2022 11:40:53 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/go-delve/</guid>
+      <guid>https://jackcipher.github.io/go-in-action/go-delve/</guid>
       <description>&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;安装 delve&lt;/li&gt;
@@ -699,25 +699,25 @@ consonant: [ət|]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alertmanager 中的周期参数</title>
-      <link>https://jackcipher.github.io/posts/alertmanager-duration-args/</link>
+      <link>https://jackcipher.github.io/promethues/alertmanager-duration-args/</link>
       <pubDate>Mon, 14 Mar 2022 00:42:52 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/alertmanager-duration-args/</guid>
+      <guid>https://jackcipher.github.io/promethues/alertmanager-duration-args/</guid>
       <description>&lt;p&gt;在 Alertmanager 中有三个跟周期相关的参数，分别是 group_wait, group_interval, repeat_interval。合理地配置参数，有利于降低告警频率，避免告警风暴产生。&lt;/p&gt;
 &lt;p&gt;在深入了解这三个参数之前，首先需要关注到 Prometheus 中也有两个周期函数，scrape_interval 与 evaluation_interval。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prometheus 增加身份认证</title>
-      <link>https://jackcipher.github.io/posts/prom_with_auth/</link>
+      <link>https://jackcipher.github.io/promethues/prom_with_auth/</link>
       <pubDate>Sat, 12 Mar 2022 08:22:20 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/prom_with_auth/</guid>
+      <guid>https://jackcipher.github.io/promethues/prom_with_auth/</guid>
       <description>&lt;p&gt;Prometheus 除了提供时序数据库和监控系统存在，其本身也对外提供了 Web 服务，用于提供报表展示及表达式计算，以及用于更新配置文件等功能的 API。&lt;/p&gt;
 &lt;p&gt;处于安全考虑，在对外的 Web 服务里，我们需要增加身份认证。Prometheus 提供 Basic Auth 身份认证。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ServiceAccount 的使用</title>
-      <link>https://jackcipher.github.io/posts/service-account/</link>
+      <link>https://jackcipher.github.io/devops/service-account/</link>
       <pubDate>Thu, 10 Mar 2022 15:01:08 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/service-account/</guid>
+      <guid>https://jackcipher.github.io/devops/service-account/</guid>
       <description>&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
 &lt;p&gt;Kubernetes 中，Pod 内部进程想要访问 API Server，就需要用到 ServiceAccount。ServiceAccount 类似业务系统里的账户，用于为 Pod 提供身份。&lt;/p&gt;</description>
     </item>
@@ -732,9 +732,9 @@ consonant: [ət|]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Docker 下 Filebeat 日志收集</title>
-      <link>https://jackcipher.github.io/posts/docker-filebeat/</link>
+      <link>https://jackcipher.github.io/devops/docker-filebeat/</link>
       <pubDate>Sat, 05 Mar 2022 11:03:19 +0000</pubDate>
-      <guid>https://jackcipher.github.io/posts/docker-filebeat/</guid>
+      <guid>https://jackcipher.github.io/devops/docker-filebeat/</guid>
       <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
 &lt;p&gt;在收集服务端聊天消息日志时，用到了 Filebeat &lt;a href=&#34;https://www.elastic.co/guide/en/beats/filebeat/current/dissect.html&#34;&gt;dissect&lt;/a&gt; 语法，而这个语法是 Filebeat 6.4 及之后的版本支持。服务端部分机器的 Filebeat 版本为 6.3&lt;/p&gt;
 &lt;p&gt;考虑到日志收集工作的普遍性，为了保持版本统一减少运维成本，特增加一种基于 Docker 实现的通用 Filebeat 日志收集方案。&lt;/p&gt;</description>
