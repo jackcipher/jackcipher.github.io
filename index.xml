@@ -285,13 +285,11 @@
 &lt;p&gt;最朴素的解法是循环检查每一位（Loop &amp;amp; Shift），其时间复杂度固定为 $O(n)$。然而，&lt;strong&gt;Kernighan&amp;rsquo;s Algorithm&lt;/strong&gt; 提供了一种更为优雅且高效的思路，将时间复杂度优化至 &lt;strong&gt;$O(k)$&lt;/strong&gt;（$k$ 为 set bit 的个数）：&lt;strong&gt;跳过所有的 &lt;code&gt;0&lt;/code&gt;，只处理 &lt;code&gt;1&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Coin Change</title>
+      <title>组合总和 IV：零钱兑换 II (Coin Change 2)</title>
       <link>https://jackcipher.github.io/leetcode/coin-change/</link>
       <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
-      <description>&lt;h2 id=&#34;coin-change-ii&#34;&gt;Coin Change II&lt;/h2&gt;
-&lt;p&gt;In the &amp;ldquo;Coin Change II&amp;rdquo; problem, we are given coins of various denominations and a specific amount. Our task is to determine the number of different ways we can make up that amount using the coins. Unlike other coin change problems where we need to minimize or maximize the number of coins, here we need to find the total number of possible combinations.&lt;/p&gt;
-&lt;p&gt;For instance, with coins [1,2,5] and amount 5, we have the following combinations:&lt;/p&gt;</description>
+      <description>&lt;p&gt;在 &lt;strong&gt;零钱兑换 II (Coin Change II)&lt;/strong&gt; 问题中，我们拥有一组不同面额的硬币（&lt;code&gt;coins&lt;/code&gt;）和一个目标金额（&lt;code&gt;amount&lt;/code&gt;）。任务是计算出&lt;strong&gt;凑出该目标金额的所有不同组合数&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     <item>
       <title>文档编写规范</title>
@@ -349,13 +347,11 @@
 &lt;p&gt;&lt;a href=&#34;https://github.com/lint-md/lint-md&#34;&gt;https://github.com/lint-md/lint-md&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>一文看懂快慢指针解法</title>
+      <title>深入理解快慢指针：Floyd 判圈算法</title>
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;快慢指针的解法在 LeetCode 中非常常见，尤其是涉及到链表有环的情况下。&lt;/p&gt;
-&lt;p&gt;我们常说的快慢指针解法，其实就是 Floyd 环形检测算法，这个算法会在链表的头部初始化两个指针，分别称为快指针和慢指针。慢指针每次走一步，快指针每次走两步。&lt;/p&gt;</description>
+      <description>&lt;p&gt;在链表操作中，&lt;strong&gt;快慢指针 (Fast &amp;amp; Slow Pointers)&lt;/strong&gt; 是一种极其经典且优雅的技巧。它主要用于解决链表中的环路检测、中点寻找等问题。其背后的理论基础通常被称为 &lt;strong&gt;Floyd 判圈算法 (Floyd&amp;rsquo;s Cycle-Finding Algorithm)&lt;/strong&gt;，有时也形象地被称为“龟兔赛跑算法”。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitLab CI/CD 变量的用法</title>
