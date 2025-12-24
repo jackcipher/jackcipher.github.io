@@ -17,12 +17,11 @@
 &lt;p&gt;在算法面试中，&lt;strong&gt;二分查找（Binary Search）&lt;/strong&gt; 是一个非常重要的知识点。许多人在实际应用时会遇到边界处理的问题，导致程序出现 bug。本文将总结二分查找的通用模型，并分析常见错误。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>LeetCode 经典问题：数组求和系列详解与分析</title>
+      <title>数组求和系列详解与分析</title>
       <link>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</link>
       <pubDate>Sat, 01 Feb 2025 20:58:00 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/leetcode-sum-topic/</guid>
-      <description>&lt;h1 id=&#34;leetcode-经典问题数组求和系列详解与分析&#34;&gt;LeetCode 经典问题：数组求和系列详解与分析&lt;/h1&gt;
-&lt;p&gt;数组求和问题是算法面试中的经典题型，本文将从基础到进阶，系统地分析 2Sum、3Sum、3Sum Closest 和 4Sum 的解题思路、代码实现及优化方案。&lt;/p&gt;</description>
+      <description>&lt;p&gt;数组求和问题（N-Sum）是算法面试中经久不衰的经典题型。从最基础的 &lt;strong&gt;Two Sum&lt;/strong&gt; 到进阶的 &lt;strong&gt;kSum&lt;/strong&gt;，其核心本质往往殊途同归。本文将以资深工程师的视角，系统梳理 &lt;strong&gt;2Sum、3Sum、3Sum Closest&lt;/strong&gt; 及 &lt;strong&gt;4Sum&lt;/strong&gt; 的解题演进之路，探讨如何通过&lt;strong&gt;双指针&lt;/strong&gt;与&lt;strong&gt;剪枝策略&lt;/strong&gt;将时间复杂度压榨至极限。&lt;/p&gt;</description>
     </item>
     <item>
       <title>位操作之 Kernighan&#39;s Algorithm</title>
