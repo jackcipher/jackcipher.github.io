@@ -9,11 +9,13 @@
     <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Obsidian 中 Mermaid 的原生主题定制方案</title>
+      <title>Obsidian 如何设置 Mermaid 主题</title>
       <link>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</guid>
-      <description>很多人以为在 Obsidian 中调整 Mermaid 样式需要复杂的 CSS 或第三方插件，其实原生语法里隐藏了一个强大的配置指令...</description>
+      <description>&lt;h2 id=&#34;起因一个被忽视的原生能力&#34;&gt;起因：一个被忽视的原生能力&lt;/h2&gt;
+&lt;p&gt;作为 Obsidian 的重度用户，Mermaid 已经成为我日常笔记中不可或缺的一部分。用纯文本快速画出流程图、时序图，这种体验确实很爽。&lt;/p&gt;
+&lt;p&gt;但用久了就会发现一个问题：&lt;strong&gt;所有图表都长得一模一样&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
