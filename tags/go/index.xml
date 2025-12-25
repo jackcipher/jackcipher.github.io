@@ -20,8 +20,7 @@
       <link>https://jackcipher.github.io/leetcode/leetcode-bisection/</link>
       <pubDate>Wed, 05 Feb 2025 14:27:00 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/leetcode-bisection/</guid>
-      <description>&lt;h1 id=&#34;二分查找的通用模型与常见错误&#34;&gt;二分查找的通用模型与常见错误&lt;/h1&gt;
-&lt;p&gt;在算法面试中，&lt;strong&gt;二分查找（Binary Search）&lt;/strong&gt; 是一个非常重要的知识点。许多人在实际应用时会遇到边界处理的问题，导致程序出现 bug。本文将总结二分查找的通用模型，并分析常见错误。&lt;/p&gt;</description>
+      <description>&lt;p&gt;在算法面试中，&lt;strong&gt;二分查找（Binary Search）&lt;/strong&gt; 是一个非常重要的知识点。许多人在实际应用时会遇到边界处理的问题，导致程序出现 bug。本文将总结二分查找的通用模型，并分析常见错误。&lt;/p&gt;</description>
     </item>
     <item>
       <title>数组求和系列详解与分析</title>
