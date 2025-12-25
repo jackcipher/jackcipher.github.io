@@ -32,7 +32,7 @@ n - 1 & = & \text{High} & \mathbf{0} & 11\dots1 \\
 \hline
 \text{Result} & = & \text{High} & \mathbf{0} & 00\dots0
 \end{array}
-$$</p><p><strong>结论</strong>：高位保持不变，低位全部归零，唯独最右侧的那个 <code>1</code> 被消除了。</p><h2 id=算法演示>算法演示<a hidden class=anchor aria-hidden=true href=#算法演示>#</a></h2><p>在下方输入任意数字（0-255），观察每次迭代如何精准地摘除一个 set bit。</p><div class="algo-container algo-frame" id=algo-brian-kernighan style=position:relative;min-height:600px;display:flex;flex-direction:column><div style=position:absolute;top:12px;right:12px;pointer-events:none;z-index:10><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 4px rgba(250,204,21,.5))"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><div class=algo-viz><div class=controls><span>数值:</span>
+$$</p><p><strong>结论</strong>：高位保持不变，低位全部归零，唯独最右侧的那个 <code>1</code> 被消除了。</p><h2 id=算法演示>算法演示<a hidden class=anchor aria-hidden=true href=#算法演示>#</a></h2><p>在下方输入任意数字（0-255），观察每次迭代如何精准地摘除一个 set bit。</p><div class="algo-container algo-frame" id=algo-brian-kernighan style=position:relative;min-height:600px;display:flex;flex-direction:column><div class=algo-viz><div class=controls><span>数值:</span>
 <input type=number id=inputN value=42 min=0 max=255>
 <button id=btnLoad style="padding:5px 8px">加载</button><div style="width:1px;height:16px;background:#444;margin:0 5px"></div><button class=secondary id=btnPrev disabled>Up</button>
 <button id=btnNext disabled>Down</button>

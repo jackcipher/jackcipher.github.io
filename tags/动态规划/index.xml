@@ -13,7 +13,7 @@
       <link>https://jackcipher.github.io/leetcode/coin-change/</link>
       <pubDate>Sun, 14 Jan 2024 00:15:50 +0800</pubDate>
       <guid>https://jackcipher.github.io/leetcode/coin-change/</guid>
-      <description>&lt;p&gt;在 &lt;strong&gt;零钱兑换 II (Coin Change II)&lt;/strong&gt; 问题中，我们拥有一组不同面额的硬币（&lt;code&gt;coins&lt;/code&gt;）和一个目标金额（&lt;code&gt;amount&lt;/code&gt;）。任务是计算出&lt;strong&gt;凑出该目标金额的所有不同组合数&lt;/strong&gt;。&lt;/p&gt;</description>
+      <description>&lt;p&gt;动态规划（Dynamic Programming）往往是算法面试中的一道坎。它的核心思想其实并不复杂，但难点在于如何把一个大问题拆解成状态转移公式。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
