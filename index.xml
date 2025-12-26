@@ -20,9 +20,8 @@
       <link>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</guid>
-      <description>&lt;h2 id=&#34;起因一个被忽视的原生能力&#34;&gt;起因：一个被忽视的原生能力&lt;/h2&gt;
-&lt;p&gt;作为 Obsidian 的重度用户，Mermaid 已经成为我日常笔记中不可或缺的一部分。用纯文本快速画出流程图、时序图，这种体验确实很爽。&lt;/p&gt;
-&lt;p&gt;但用久了就会发现一个问题：&lt;strong&gt;所有图表都长得一模一样&lt;/strong&gt;。&lt;/p&gt;</description>
+      <description>&lt;p&gt;用 Obsidian 画 Mermaid 图表的人很多，但知道可以&lt;strong&gt;单独给每个图表设置主题&lt;/strong&gt;的人很少。&lt;/p&gt;
+&lt;p&gt;不需要插件，不需要写 CSS，只要在代码块开头加一行配置，就能让同一篇笔记里的不同图表呈现完全不同的风格。&lt;/p&gt;</description>
     </item>
     <item>
       <title>如何通过 mitmproxy 激活 Shottr</title>
