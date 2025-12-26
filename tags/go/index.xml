@@ -133,11 +133,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;ol&gt;
+        &lt;ol&gt;
 &lt;li&gt;编译的时候需要禁用编译器优化：&lt;code&gt;go build -gcflags=&amp;quot;-N -l&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;编译选项有哪些：&lt;code&gt;go tool compile -h&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;调试正在运行的进程&#34;&gt;调试正在运行的进程&lt;/h4&gt;
+&lt;/ol&gt;
+    &lt;/blockquote&gt;&lt;h4 id=&#34;调试正在运行的进程&#34;&gt;调试正在运行的进程&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -166,7 +166,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;兼容&lt;code&gt;dlv connect&lt;/code&gt;、&lt;code&gt;VS Code Go&lt;/code&gt;、&lt;code&gt;GoLand&lt;/code&gt;&lt;/p&gt;</description>
+        &lt;p&gt;兼容&lt;code&gt;dlv connect&lt;/code&gt;、&lt;code&gt;VS Code Go&lt;/code&gt;、&lt;code&gt;GoLand&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

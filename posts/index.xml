@@ -31,8 +31,8 @@
       <pubDate>Sat, 13 Jan 2024 06:16:35 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/standards-for-documentation/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;转载于公司技术委员会&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;markdown&#34;&gt;Markdown&lt;/h2&gt;
+        &lt;p&gt;转载于公司技术委员会&lt;/p&gt;
+    &lt;/blockquote&gt;&lt;h2 id=&#34;markdown&#34;&gt;Markdown&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.markdownguide.org/getting-started/&#34;&gt;Markdown Guide&lt;/a&gt;&lt;/p&gt;
@@ -78,7 +78,7 @@
 &lt;li&gt;&lt;a href=&#34;https://ewiki.baijiashilian.com/BTC/%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83/CICD/MarkDown%20Lint%20%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.md&#34;&gt;相关文档，Chrome、VS Code 插件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/lint-md/lint-md&#34;&gt;https://github.com/lint-md/lint-md&lt;/a&gt;&lt;/p&gt;</description>
+        &lt;p&gt;&lt;a href=&#34;https://github.com/lint-md/lint-md&#34;&gt;https://github.com/lint-md/lint-md&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>PaperMod 主题下代码高亮最佳实践</title>
