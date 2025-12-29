@@ -6,8 +6,18 @@
     <description>Recent content in Posts on Jack</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 29 Dec 2025 13:56:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 21:50:58 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>逆向工具实战：还原 Shottr v1.9.1 的校验算法</title>
+      <link>https://jackcipher.github.io/posts/how-to-crack-shottr-v1.9/</link>
+      <pubDate>Mon, 29 Dec 2025 21:50:58 +0000</pubDate>
+      <guid>https://jackcipher.github.io/posts/how-to-crack-shottr-v1.9/</guid>
+      <description>&lt;blockquote&gt;
+        &lt;p&gt;一场有趣的猫鼠游戏：当开发者针对旧版破解方案引入了硬编码的校验逻辑，我们该如何层层剥茧，还原其背后的算法真相？&lt;/p&gt;
+    &lt;/blockquote&gt;&lt;h2 id=&#34;0x01-前言&#34;&gt;0x01 前言&lt;/h2&gt;
+&lt;p&gt;在 8 月份的文章中，我分享了&lt;a href=&#34;https://jackcipher.github.io/posts/how-to-crack-shottr/&#34;&gt;如何通过 mitmproxy 激活 Shottr&lt;/a&gt;。原本以为这只是一个简单的 HTTP 数据包篡改游戏，但作者在 v1.9.1 版本中打了一个&amp;quot;反击战&amp;quot;。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>FFmpeg 参数顺序的隐藏陷阱</title>
       <link>https://jackcipher.github.io/posts/ffmpeg-snapshot-performance/</link>
