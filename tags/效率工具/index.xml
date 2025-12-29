@@ -9,7 +9,7 @@
     <lastBuildDate>Mon, 29 Dec 2025 21:50:58 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/tags/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>逆向工具实战：还原 Shottr v1.9.1 的校验算法</title>
+      <title>逆向工具实战：还原 Shottr v1.9.1 的 Hash 算法</title>
       <link>https://jackcipher.github.io/posts/how-to-crack-shottr-v1.9/</link>
       <pubDate>Mon, 29 Dec 2025 21:50:58 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/how-to-crack-shottr-v1.9/</guid>
