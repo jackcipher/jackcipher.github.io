@@ -6,8 +6,15 @@
     <description>Recent content in Series on Jack</description>
     <generator>Hugo -- 0.149.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 17 Dec 2025 20:36:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 21:50:58 +0000</lastBuildDate>
     <atom:link href="https://jackcipher.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shottr</title>
+      <link>https://jackcipher.github.io/series/shottr/</link>
+      <pubDate>Fri, 29 Aug 2025 11:01:58 +0000</pubDate>
+      <guid>https://jackcipher.github.io/series/shottr/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Go in Action</title>
       <link>https://jackcipher.github.io/series/go-in-action/</link>
