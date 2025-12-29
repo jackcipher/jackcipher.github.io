@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jackcipher.github.io/tags/ffmpeg/</loc>
+    <lastmod>2025-12-29T13:56:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/ffmpeg-snapshot-performance/</loc>
+    <lastmod>2025-12-29T13:56:00+00:00</lastmod>
+  </url><url>
     <loc>https://jackcipher.github.io/tags/go/</loc>
-    <lastmod>2025-12-17T20:36:05+00:00</lastmod>
+    <lastmod>2025-12-29T13:56:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/</loc>
+    <lastmod>2025-12-29T13:56:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/posts/</loc>
+    <lastmod>2025-12-29T13:56:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jackcipher.github.io/tags/</loc>
+    <lastmod>2025-12-29T13:56:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/series/go-in-action/</loc>
     <lastmod>2025-12-17T20:36:05+00:00</lastmod>
@@ -14,13 +29,7 @@
     <loc>https://jackcipher.github.io/go-in-action/</loc>
     <lastmod>2025-12-17T20:36:05+00:00</lastmod>
   </url><url>
-    <loc>https://jackcipher.github.io/</loc>
-    <lastmod>2025-12-17T20:36:05+00:00</lastmod>
-  </url><url>
     <loc>https://jackcipher.github.io/series/</loc>
-    <lastmod>2025-12-17T20:36:05+00:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/tags/</loc>
     <lastmod>2025-12-17T20:36:05+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/mermaid/</loc>
@@ -30,9 +39,6 @@
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/posts/obsidian-mermaid-theme/</loc>
-    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jackcipher.github.io/posts/</loc>
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jackcipher.github.io/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/</loc>
