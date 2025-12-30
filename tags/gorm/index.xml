@@ -13,16 +13,14 @@
       <link>https://jackcipher.github.io/go-in-action/gorm-hook/</link>
       <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
       <guid>https://jackcipher.github.io/go-in-action/gorm-hook/</guid>
-      <description>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
-&lt;p&gt;在 office-gateway 三期优化过程中，对任务数据实现了缓存机制，旨在提高查询性能。考虑到数据写操作频繁，且当前仅有一个接口负责读取，属于典型的写多读少场景。于是决定选用 GORM 的 Hook 机制来更新缓存。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;背景&#34;&gt;0x0B 背景&lt;/h2&gt;&lt;p&gt;在 office-gateway 三期优化过程中，对任务数据实现了缓存机制，旨在提高查询性能。考虑到数据写操作频繁，且当前仅有一个接口负责读取，属于典型的写多读少场景。于是决定选用 GORM 的 Hook 机制来更新缓存。&lt;/p&gt;</description>
     </item>
     <item>
       <title>GORM v1.25 错误处理机制的变化</title>
       <link>https://jackcipher.github.io/go-in-action/gorm-v1.25/</link>
       <pubDate>Fri, 01 Nov 2024 03:17:25 +0000</pubDate>
       <guid>https://jackcipher.github.io/go-in-action/gorm-v1.25/</guid>
-      <description>&lt;h2 id=&#34;传统的错误处理方式&#34;&gt;传统的错误处理方式&lt;/h2&gt;
-&lt;p&gt;在 GORM 的使用过程中，&lt;code&gt;gorm.ErrNotFound&lt;/code&gt; 是最基础且使用最广泛的错误类型。作为开发者，我们习惯性地使用这种方式来处理查询未找到记录的情况：&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;传统的错误处理方式&#34;&gt;0x09 传统的错误处理方式&lt;/h2&gt;&lt;p&gt;在 GORM 的使用过程中，&lt;code&gt;gorm.ErrNotFound&lt;/code&gt; 是最基础且使用最广泛的错误类型。作为开发者，我们习惯性地使用这种方式来处理查询未找到记录的情况：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,7 +13,7 @@
       <link>https://jackcipher.github.io/leetcode/fast-slow-pointer/</link>
       <pubDate>Fri, 12 Jan 2024 06:31:03 +0000</pubDate>
       <guid>https://jackcipher.github.io/leetcode/fast-slow-pointer/</guid>
-      <description>&lt;p&gt;在链表操作中，&lt;strong&gt;快慢指针 (Fast &amp;amp; Slow Pointers)&lt;/strong&gt; 是一种极其经典且优雅的技巧。它主要用于解决链表中的环路检测、中点寻找等问题。其背后的理论基础通常被称为 &lt;strong&gt;Floyd 判圈算法 (Floyd&amp;rsquo;s Cycle-Finding Algorithm)&lt;/strong&gt;，有时也形象地被称为“龟兔赛跑算法”。&lt;/p&gt;</description>
+      <description>&lt;p&gt;在链表操作中，&lt;strong&gt;快慢指针 (Fast &amp;amp; Slow Pointers)&lt;/strong&gt; 是一种极其经典且优雅的技巧。它主要用于解决链表中的环路检测、中点寻找等问题。其背后的理论基础通常被称为 &lt;strong&gt;Floyd 判圈算法 (Floyd&amp;rsquo;s Cycle-Finding Algorithm)&lt;/strong&gt;，有时也形象地被称为「龟兔赛跑算法」。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

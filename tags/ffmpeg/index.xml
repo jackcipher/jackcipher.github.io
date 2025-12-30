@@ -15,8 +15,7 @@
       <guid>https://jackcipher.github.io/posts/ffmpeg-snapshot-performance/</guid>
       <description>&lt;blockquote&gt;
         &lt;p&gt;AI 建议我调整 FFmpeg 参数顺序来解决 OOM，结果对「首帧」毫无作用。但我却意外发现，这个优化对于「非首帧」有着 &lt;strong&gt;54 倍&lt;/strong&gt; 的性能天差地别。&lt;/p&gt;
-    &lt;/blockquote&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;在排查生产环境的一个 FFmpeg 截帧 OOM（内存溢出）问题时，经历了一段有趣的&amp;quot;反转&amp;quot;剧情。&lt;/p&gt;</description>
+    &lt;/blockquote&gt;&lt;h2 id=&#34;前言&#34;&gt;0x11 前言&lt;/h2&gt;&lt;p&gt;在排查生产环境的一个 FFmpeg 截帧 OOM（内存溢出）问题时，经历了一段有趣的「反转」剧情。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

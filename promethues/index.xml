@@ -13,8 +13,7 @@
       <link>https://jackcipher.github.io/promethues/prom_relabel/</link>
       <pubDate>Sat, 17 Sep 2022 09:13:47 +0000</pubDate>
       <guid>https://jackcipher.github.io/promethues/prom_relabel/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;在官方文档中，关于 &lt;code&gt;relabel&lt;/code&gt; 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。&lt;/p&gt;
+      <description>&lt;h2 id=&#34;简介&#34;&gt;0x01 简介&lt;/h2&gt;&lt;p&gt;在官方文档中，关于 &lt;code&gt;relabel&lt;/code&gt; 的介绍并不多，介绍下配置项格式就结束了。但在实际使用上，我们却离不开这个利器。&lt;/p&gt;
 &lt;p&gt;本文将结合实际使用经验，将 &lt;code&gt;relabel&lt;/code&gt; 的使用场景做一个总结。&lt;/p&gt;</description>
     </item>
     <item>

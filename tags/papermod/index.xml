@@ -13,8 +13,7 @@
       <link>https://jackcipher.github.io/posts/papermod-highlight/</link>
       <pubDate>Sat, 05 Mar 2022 13:20:01 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/papermod-highlight/</guid>
-      <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
-&lt;p&gt;PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; 来生成代码高亮。&lt;/p&gt;
+      <description>&lt;h2 id=&#34;背景&#34;&gt;0x01 背景&lt;/h2&gt;&lt;p&gt;PaperMod 主题默认使用的是 highlight.js, 这是一种由 js 生成的高亮方案。相比 highlight.js, Hugo 官方更倾向使用 &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; 来生成代码高亮。&lt;/p&gt;
 &lt;p&gt;Chroma 是由 Go 写的语法高亮工具，其编译速度更快，且 Hugo 内置了 Chroma 工具。Hugo 关于 Chroma 的文档在 &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

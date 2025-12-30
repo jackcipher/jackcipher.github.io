@@ -15,8 +15,7 @@
       <guid>https://jackcipher.github.io/posts/how-to-crack-shottr-v1.9/</guid>
       <description>&lt;blockquote&gt;
         &lt;p&gt;一场有趣的猫鼠游戏：当开发者针对旧版破解方案引入了硬编码的校验逻辑，我们该如何层层剥茧，还原其背后的算法真相？&lt;/p&gt;
-    &lt;/blockquote&gt;&lt;h2 id=&#34;0x01-前言&#34;&gt;0x01 前言&lt;/h2&gt;
-&lt;p&gt;在 8 月份的文章中，我分享了&lt;a href=&#34;https://jackcipher.github.io/posts/how-to-crack-shottr/&#34;&gt;如何通过 mitmproxy 激活 Shottr&lt;/a&gt;。原本以为这只是一个简单的 HTTP 数据包篡改游戏，但作者在 v1.9.1 版本中打了一个&amp;quot;反击战&amp;quot;。&lt;/p&gt;</description>
+    &lt;/blockquote&gt;&lt;h2 id=&#34;前言&#34;&gt;0x13 前言&lt;/h2&gt;&lt;p&gt;在 8 月份的文章中，我分享了&lt;a href=&#34;https://jackcipher.github.io/posts/how-to-crack-shottr/&#34;&gt;如何通过 mitmproxy 激活 Shottr&lt;/a&gt;。原本以为这只是一个简单的 HTTP 数据包篡改游戏，但作者在 v1.9.1 版本中打了一个「反击战」。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Obsidian 如何设置 Mermaid 主题</title>
@@ -32,8 +31,7 @@
       <pubDate>Fri, 29 Aug 2025 11:01:58 +0000</pubDate>
       <guid>https://jackcipher.github.io/posts/how-to-crack-shottr/</guid>
       <description>&lt;p&gt;Shottr 是一款功能强大的 macOS 截图软件，虽然基础功能免费，但许多实用的高级功能（如 backdrop 背景虚化等）需要付费使用。&lt;/p&gt;
-&lt;h3 id=&#34;激活原理&#34;&gt;激活原理&lt;/h3&gt;
-&lt;p&gt;通过 Charles 抓包发现，每当在 Shottr 里的 &amp;ldquo;License&amp;rdquo; 界面进行激活时，App 都会向 &lt;code&gt;shottr.cc&lt;/code&gt; 发送一个 POST 请求来验证激活码的有效性。&lt;/p&gt;</description>
+&lt;h2 id=&#34;激活原理&#34;&gt;0x0B 激活原理&lt;/h2&gt;&lt;p&gt;通过 Charles 抓包发现，每当在 Shottr 里的 &amp;ldquo;License&amp;rdquo; 界面进行激活时，App 都会向 &lt;code&gt;shottr.cc&lt;/code&gt; 发送一个 POST 请求来验证激活码的有效性。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
